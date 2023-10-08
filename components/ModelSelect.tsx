@@ -21,10 +21,10 @@ export default function ModelSelect(props: ModelSelectProps) {
           <InputLabel>Model</InputLabel>
           <Select {...field} fullWidth>
             <ListSubheader>OpenAI</ListSubheader>
-            <MenuItem value={"gpt-3.5-turbo"}>GPT 3.5</MenuItem>
-            <MenuItem value={"gpt-4"}>GPT 4</MenuItem>
+            <MenuItem value={"gpt-3.5-turbo"}>&nbsp;&nbsp;&nbsp;GPT 3.5</MenuItem>
+            <MenuItem value={"gpt-4"}>&nbsp;&nbsp;&nbsp;GPT 4</MenuItem>
             <ListSubheader>Anthropic</ListSubheader>
-            <MenuItem value={"claude-2"}>Claude 2</MenuItem>
+            <MenuItem value={"claude-2"}>&nbsp;&nbsp;&nbsp;Claude 2</MenuItem>
           </Select>
         </div>
       )}
