@@ -1,17 +1,10 @@
 import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import { Typography } from "@mui/material";
-import Rhf from "@/components/Rhf";
 
 export default function Home() {
   return (
-    <main>
-      <Navigation />
-      <div className="w-1/2 m-auto">
-        <Typography variant="h1">Chat</Typography>
-        <Rhf />
-      </div>
-    </main>
+    <Typography variant="h1">Main</Typography>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
