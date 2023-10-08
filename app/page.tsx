@@ -4,7 +4,19 @@ import { Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <Typography variant="h1">Main</Typography>
+    <div>
+      <div>
+        <Typography variant="h1">PATHFINDER</Typography>
+      </div>
+      <div>
+        <Typography variant="h2">
+          Pioneering Advanced Technology in Higher Education to{" "}
+        </Typography>
+      </div>
+      <div>
+        <Typography variant="body1">Test test</Typography>
+      </div>
+    </div>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
