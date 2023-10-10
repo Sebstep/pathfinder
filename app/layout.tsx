@@ -27,7 +27,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navigation />
-        <main className="mx-auto mt-14 sm:mt-16 mb-32">{children}</main>
+        <main className="mx-auto mb-32">{children}</main>
         <Footer />
       </body>
     </html>
