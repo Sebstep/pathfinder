@@ -7,6 +7,8 @@ import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { GiWizardStaff, GiBorderedShield, GiBroadsword } from "react-icons/gi";
+import InstitutionLogos from "@/components/Institutionlogos";
+import Box from "@mui/material/Box";
 
 export default function Home() {
   return (
@@ -17,10 +19,11 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8">
               <h1 className="text-5xl font-semibold mb-4">
-                Welcome to Our Website
+                Welcome to the Pathfinder Project
               </h1>
               <p className="text-lg mb-6">
-                We provide top-notch services to help your business succeed.
+                We provide insights and best practices for using AI in
+                education.
               </p>
               <Button variant="contained" color="primary" href="#">
                 Get Started
@@ -42,8 +45,9 @@ export default function Home() {
       <section className="bg-gray-100 py-16">
         <Container>
           <h2 className="text-3xl font-semibold text-center mb-10">
-            Our Features
+            Meet the Pathfinders
           </h2>
+
           <Grid container spacing={3} justifyContent="center">
             <Grid item xs={12} sm={6} md={4}>
               <Card className="h-full flex flex-col">
@@ -52,8 +56,14 @@ export default function Home() {
                     SAGE <GiWizardStaff className="inline" />
                   </Typography>
                   <p>Strategies for AI-Guided Education</p>
-                  <Button variant="outlined" color="primary" size="small" href="#" className="top-2">
-                    Get Started
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="small"
+                    href="#sage"
+                    className="top-2"
+                  >
+                    Read more
                   </Button>
                 </CardContent>
               </Card>
@@ -67,8 +77,14 @@ export default function Home() {
                   <p>
                     Generative Universal Assistant for Resourceful Development
                   </p>
-                  <Button variant="outlined" color="primary" size="small" href="/guard" className="top-2">
-                    Get Started
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="small"
+                    href="#guard"
+                    className="top-2"
+                  >
+                    Read more
                   </Button>
                 </CardContent>
               </Card>
@@ -83,8 +99,14 @@ export default function Home() {
                     AI Readiness Training for Insightful Systematic Adaptation
                     and Navigation
                   </p>
-                  <Button variant="outlined" color="primary" size="small" href="#" className="top-2">
-                    Get Started
+                  <Button
+                    variant="outlined"
+                    color="primary"
+                    size="small"
+                    href="#artisan"
+                    className="top-2"
+                  >
+                    Read more
                   </Button>
                 </CardContent>
               </Card>
@@ -93,8 +115,61 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* Experimental */}
+      <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left px-12">
+        <Link
+          href="/sage"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            SAGE{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
+              <GiWizardStaff />
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Strategies for AI-Guided Education.
+          </p>
+        </Link>
+        <Link
+          href="/guard"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            GUARD{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
+              <GiBorderedShield />
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Generative Universal Assistant for Resourceful Development.
+          </p>
+        </Link>
+        <Link
+          href="/artisan"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2 className="mb-3 text-2xl font-semibold">
+            ARTISAN{" "}
+            <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
+              <GiBroadsword />
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            AI Readiness Training for Insightful Systematic Adaptation and
+            Navigation.
+          </p>
+        </Link>
+      </div>
+
       {/* <!-- About Section --> */}
-      <section id="about" className="py-12">
+      <section id="about" className="py-12 bg-gray-300">
         <div className="container mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-4">About Us</h2>
           <p className="text-lg mb-8">
@@ -110,6 +185,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SAGE Section */}
+      <section id="sage" className="py-12">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-semibold mb-4 text-center">SAGE</h2>
+          <p>Test</p>
+        </div>
+      </section>
+
+      {/* GUARD Section */}
+      <section id="guard" className="py-12">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-semibold mb-4 text-center">GUARD</h2>
+          <p>Test</p>
+        </div>
+      </section>
+
+      {/* ARTISAN Section */}
+      <section id="artisan" className="py-12">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-semibold mb-4 text-center">ARTISAN</h2>
+          <p>Test</p>
+        </div>
+      </section>
+
       {/* <!-- Contact Section --> */}
       <section id="contact" className="bg-gray-200 py-12">
         <div className="container mx-auto text-center">
@@ -120,8 +219,13 @@ export default function Home() {
           {/* <!-- Add your contact form or contact information here --> */}
         </div>
       </section>
-    </div>
 
+      {/* <!-- Institution Logos --> */}
+      <section className="bg-gray-300 py-12">
+        <InstitutionLogos />
+        {/* TODO: Insert Erasmus Logo here */}
+      </section>
+    </div>
 
     // <div>
     //   <div>
@@ -228,22 +332,6 @@ export default function Home() {
     //       </p>
     //     </a>
 
-    //     <a
-    //       href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={`mb-3 text-2xl font-semibold`}>
-    //         Deploy{' '}
-    //         <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-    //           -&gt;
-    //         </span>
-    //       </h2>
-    //       <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-    //         Instantly deploy your Next.js site to a shareable URL with Vercel.
-    //       </p>
-    //     </a>
     //   </div>
     // </main>
   );
