@@ -11,7 +11,7 @@ const toggleMobileMenu = () => {
 
 export default function Navigation() {
   return (
-    <nav className="bg-blue-500 p-4">
+    <nav className="bg-blue-500 p-4 sticky top-0 z-50">
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-white text-2xl font-semibold">
