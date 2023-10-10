@@ -67,7 +67,7 @@ export default function Home() {
                   <p>
                     Generative Universal Assistant for Resourceful Development
                   </p>
-                  <Button variant="outlined" color="primary" size="small" href="#" className="top-2">
+                  <Button variant="outlined" color="primary" size="small" href="/guard" className="top-2">
                     Get Started
                   </Button>
                 </CardContent>
