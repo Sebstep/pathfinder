@@ -23,7 +23,9 @@ export default function Home() {
               Welcome to the Pathfinder Project
             </h1>
             <p className="mb-8 leading-relaxed">
-              We provide insights and best practices for using AI in education.
+              Pioneering AI Technology in Higher Education to Facilitate
+              Innovation and Nurture the Development of Entrepreneurial
+              Resources
             </p>
             <div className="flex justify-center">
               <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
@@ -61,20 +63,20 @@ export default function Home() {
             <Featurecard
               title="SAGE"
               description="Strategies for AI-Guided Education"
-              icon={<GiWizardStaff />}
+              icon={<GiWizardStaff size={24} />}
               link="/sage"
             />
             <Featurecard
               title="GUARD"
               description="Generative Universal Assistant for Resourceful Development"
-              icon={<GiBorderedShield />}
+              icon={<GiBorderedShield size={24} />}
               link="/guard"
             />
             <Featurecard
               title="ARTISAN"
               description="AI Readiness Training for Insightful Systematic Adaptation
                     and Navigation"
-              icon={<GiBroadsword />}
+              icon={<GiBroadsword size={24} />}
               link="/artisan"
             />
           </div>
