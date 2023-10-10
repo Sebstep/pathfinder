@@ -5,18 +5,49 @@ import { Typography } from "@mui/material";
 export default function Home() {
   return (
     <div>
-      <div>
-        <Typography variant="h1">PATHFINDER</Typography>
-      </div>
-      <div>
-        <Typography variant="h2">
-          Pioneering Advanced Technology in Higher Education to{" "}
-        </Typography>
-      </div>
-      <div>
-        <Typography variant="body1">Test test</Typography>
-      </div>
+      {/* <!-- Hero Section --> */}
+      <header className="bg-cover bg-center relative h-screen flex items-center">
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <div className="container mx-auto relative z-10 text-white text-center">
+              <h1 className="text-4xl font-extrabold leading-tight mb-4">Welcome to Erasmus Project</h1>
+              <p className="text-lg mb-8">Explore opportunities for international education.</p>
+              <a href="#about" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Learn More</a>
+          </div>
+      </header>
+
+      {/* <!-- About Section --> */}
+      <section id="about" className="py-12">
+          <div className="container mx-auto text-center">
+              <h2 className="text-3xl font-semibold mb-4">About Us</h2>
+              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget libero justo.</p>
+              <a href="#contact" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Contact Us</a>
+          </div>
+      </section>
+
+      {/* <!-- Contact Section --> */}
+      <section id="contact" className="bg-gray-200 py-12">
+          <div className="container mx-auto text-center">
+              <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
+              <p className="text-lg mb-8">Feel free to get in touch with us for more information.</p>
+              {/* <!-- Add your contact form or contact information here --> */}
+          </div>
+      </section>
     </div>
+
+    // <div>
+    //   <div>
+    //     <Typography variant="h1">PATHFINDER</Typography>
+    //   </div>
+    //   <div>
+    //     <Typography variant="body1">
+    //       Pioneering AI Technology in Higher Education to Facilitate Innovation
+    //       and Nurture the Development of Entrepreneurial Resources
+    //     </Typography>
+    //   </div>
+    //   <div>
+    //     <Typography variant="body1">Test test</Typography>
+    //   </div>
+    // </div>
 
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
 
