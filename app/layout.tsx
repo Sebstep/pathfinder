@@ -22,9 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <head>
+        <link rel="icon" href="/icon.ico" />
+      </head>
       <body className={inter.className}>
         <Navigation />
         <main className="container mx-auto">{children}</main>
