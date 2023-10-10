@@ -1,5 +1,6 @@
 import "./globals.css";
 import * as React from "react";
+import Head from "next/head";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
@@ -21,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={inter.className}>
         <Navigation />
         <main className="container mx-auto">{children}</main>
