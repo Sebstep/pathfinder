@@ -1,38 +1,127 @@
 import Image from "next/image";
-import Navigation from "@/components/Navigation";
+import Link from "next/link";
 import { Typography } from "@mui/material";
+import Container from "@mui/material/Container";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import { GiWizardStaff, GiBorderedShield, GiBroadsword } from "react-icons/gi";
 
 export default function Home() {
   return (
-    <div>
-      {/* <!-- Hero Section --> */}
-      <header className="bg-cover bg-center relative h-screen flex items-center">
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="container mx-auto relative z-10 text-white text-center">
-              <h1 className="text-4xl font-extrabold leading-tight mb-4">Welcome to Erasmus Project</h1>
-              <p className="text-lg mb-8">Explore opportunities for international education.</p>
-              <a href="#about" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Learn More</a>
+    <div className="">
+      {/* Hero Section */}
+      <header className="bg-blue-900 text-white py-20">
+        <Container>
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-8">
+              <h1 className="text-5xl font-semibold mb-4">
+                Welcome to Our Website
+              </h1>
+              <p className="text-lg mb-6">
+                We provide top-notch services to help your business succeed.
+              </p>
+              <Button variant="contained" color="primary" href="#">
+                Get Started
+              </Button>
+            </div>
+            <div className="md:w-1/2">
+              <Image
+                src="/images/AdobeStock_622648834.jpeg"
+                alt="Hero Image"
+                width={600}
+                height={400}
+              />
+            </div>
           </div>
+        </Container>
       </header>
+
+      {/* Feature Cards */}
+      <section className="bg-gray-100 py-16">
+        <Container>
+          <h2 className="text-3xl font-semibold text-center mb-10">
+            Our Features
+          </h2>
+          <Grid container spacing={3} justifyContent="center">
+            <Grid item xs={12} sm={6} md={4}>
+              <Card className="h-full flex flex-col">
+                <CardContent className="flex-grow">
+                  <Typography variant="h5" component="div">
+                    SAGE <GiWizardStaff className="inline" />
+                  </Typography>
+                  <p>Strategies for AI-Guided Education</p>
+                  <Button variant="outlined" color="primary" size="small" href="#" className="top-2">
+                    Get Started
+                  </Button>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card className="h-full flex flex-col">
+                <CardContent className="flex-grow">
+                  <Typography variant="h5" component="div">
+                    GUARD <GiBorderedShield className="inline" />
+                  </Typography>
+                  <p>
+                    Generative Universal Assistant for Resourceful Development
+                  </p>
+                  <Button variant="outlined" color="primary" size="small" href="#" className="top-2">
+                    Get Started
+                  </Button>
+                </CardContent>
+              </Card>
+            </Grid>
+            <Grid item xs={12} sm={6} md={4}>
+              <Card className="h-full flex flex-col">
+                <CardContent className="flex-grow">
+                  <Typography variant="h5" component="div">
+                    ARTISAN <GiBroadsword className="inline" />
+                  </Typography>
+                  <p>
+                    AI Readiness Training for Insightful Systematic Adaptation
+                    and Navigation
+                  </p>
+                  <Button variant="outlined" color="primary" size="small" href="#" className="top-2">
+                    Get Started
+                  </Button>
+                </CardContent>
+              </Card>
+            </Grid>
+          </Grid>
+        </Container>
+      </section>
 
       {/* <!-- About Section --> */}
       <section id="about" className="py-12">
-          <div className="container mx-auto text-center">
-              <h2 className="text-3xl font-semibold mb-4">About Us</h2>
-              <p className="text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget libero justo.</p>
-              <a href="#contact" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Contact Us</a>
-          </div>
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-semibold mb-4">About Us</h2>
+          <p className="text-lg mb-8">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget
+            libero justo.
+          </p>
+          <a
+            href="#contact"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+          >
+            Contact Us
+          </a>
+        </div>
       </section>
 
       {/* <!-- Contact Section --> */}
       <section id="contact" className="bg-gray-200 py-12">
-          <div className="container mx-auto text-center">
-              <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
-              <p className="text-lg mb-8">Feel free to get in touch with us for more information.</p>
-              {/* <!-- Add your contact form or contact information here --> */}
-          </div>
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
+          <p className="text-lg mb-8">
+            Feel free to get in touch with us for more information.
+          </p>
+          {/* <!-- Add your contact form or contact information here --> */}
+        </div>
       </section>
     </div>
+
 
     // <div>
     //   <div>
