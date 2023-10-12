@@ -14,7 +14,7 @@ import Featurecard from "@/components/Featurecard";
 export default function Home() {
   function Headings(props: { top: string; bottom: string }) {
     return (
-      <div className="flex flex-col text-center w-full mb-4">
+      <div className="flex flex-col text-center w-full mb-8">
         <h3 className="text-xs text-blue-500 tracking-widest font-medium text-center mb-1">
           {props.top}
         </h3>
@@ -29,10 +29,12 @@ export default function Home() {
     <div className="">
       {/* Hero Section */}
 
-      <section className="text-gray-600 body-font py-16">
-        <div className="container mx-auto flex px-5 flex-col md:flex-row items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+      <section className="py-16">
+        <div className="container mx-auto px-5 flex flex-col items-center md:flex-row">
+
+          {/* Left Side */}
+          <div className="text-center flex flex-col items-center md:pr-16 md:items-start md:text-left lg:flex-grow md:w-1/2 lg:pr-24">
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
               Welcome to the Pathfinder Project
             </h1>
             <p className="mb-8 leading-relaxed">
@@ -40,16 +42,10 @@ export default function Home() {
               Innovation and Nurture the Development of Entrepreneurial
               Resources
             </p>
-            <div className="flex justify-center mb-8">
-              <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-                Button
-              </button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
-                Button
-              </button>
-            </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+
+          {/* Right Side */}
+          <div className="w-5/6 md:w-1/2 lg:max-w-lg lg:w-full">
             <Image
               src="/images/AdobeStock_622648834.jpeg"
               alt="Hero Image"
@@ -58,6 +54,7 @@ export default function Home() {
               className="object-cover object-center rounded-2xl"
             />
           </div>
+
         </div>
       </section>
 
@@ -91,7 +88,10 @@ export default function Home() {
 
       {/* <!-- About Section --> */}
       <section className="mx-auto py-16">
-        <Headings top="ABOUT US" bottom="Participating Organizations" />
+        <Headings
+          top="PROJECT CONSORTIUM"
+          bottom="Participating Organizations"
+        />
         <div className="text-center">
           <InstitutionLogos />
           <p className="mb-8">
