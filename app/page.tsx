@@ -12,6 +12,19 @@ import Box from "@mui/material/Box";
 import Featurecard from "@/components/Featurecard";
 
 export default function Home() {
+  function Headings(props: { top: string; bottom: string }) {
+    return (
+      <div className="flex flex-col text-center w-full mb-4">
+        <h3 className="text-xs text-blue-500 tracking-widest font-medium text-center mb-1">
+          {props.top}
+        </h3>
+        <h2 className="sm:text-3xl text-2xl font-medium title-font">
+          {props.bottom}
+        </h2>
+      </div>
+    );
+  }
+
   return (
     <div className="">
       {/* Hero Section */}
@@ -27,7 +40,7 @@ export default function Home() {
               Innovation and Nurture the Development of Entrepreneurial
               Resources
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-8">
               <button className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
                 Button
               </button>
@@ -49,16 +62,9 @@ export default function Home() {
       </section>
 
       {/* Feature Section */}
-      <section className="py-12">
+      <section className="py-16">
         <div className="container px-5 mx-auto">
-          <div className="flex flex-col text-center w-full mb-4">
-            <h2 className="text-xs text-blue-500 tracking-widest font-medium mb-1">
-              ROOF PARTY POLAROID
-            </h2>
-            <h1 className="sm:text-3xl text-2xl font-medium title-font">
-              Meet the Pathfinders
-            </h1>
-          </div>
+          <Headings top="PROJECT DELIVERABLES" bottom="Meet the Pathfinders" />
           <div className="flex flex-wrap -m-4">
             <Featurecard
               title="SAGE"
@@ -83,72 +89,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Experimental */}
-      <section className="py-12">
-        <div className="grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left px-12">
-          <Link
-            href="/sage"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h3 className="">
-              SAGE{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
-                <GiWizardStaff />
-              </span>
-            </h3>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Strategies for AI-Guided Education.
-            </p>
-          </Link>
-          <Link
-            href="/guard"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h3 className="">
-              GUARD{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
-                <GiBorderedShield />
-              </span>
-            </h3>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              Generative Universal Assistant for Resourceful Development.
-            </p>
-          </Link>
-          <Link
-            href="/artisan"
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h3 className="">
-              ARTISAN{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-2 motion-reduce:transform-none">
-                <GiBroadsword />
-              </span>
-            </h3>
-            <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-              AI Readiness Training for Insightful Systematic Adaptation and
-              Navigation.
-            </p>
-          </Link>
-        </div>
-      </section>
-
       {/* <!-- About Section --> */}
-      <section className="mx-auto py-12 bg-gray-300">
-        <div className="text-center">
-          <h2>About Us</h2>
-        </div>
+      <section className="mx-auto py-16">
+        <Headings top="ABOUT US" bottom="Participating Organizations" />
         <div className="text-center">
           <InstitutionLogos />
           <p className="mb-8">
             Feel free to get in touch with us for more information.
           </p>
-
           <Link
             href="#about"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
