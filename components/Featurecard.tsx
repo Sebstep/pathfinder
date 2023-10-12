@@ -16,7 +16,7 @@ export default function Featurecard(props: FeaturecardProps) {
           <div className="w-12 h-12 mr-4 inline-flex items-center justify-center rounded-full bg-blue-500 text-white flex-shrink-0 transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
             {props.icon}
           </div>
-          <h3>{props.title}</h3>
+          <h3 className="text-2xl font-medium mb-4 text-left">{props.title}</h3>
         </div>
         <div className="flex-grow">
           <p className="leading-relaxed text-base">{props.description}</p>
