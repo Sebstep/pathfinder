@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  h1 {
-    @apply text-5xl font-semibold mb-8;
-  }
-  h2 {
-    @apply text-3xl font-semibold mb-4 text-center;
-  }
-  h3 {
-    @apply text-2xl font-semibold mb-4 text-left;
-  }
   p {
     @apply text-lg;
   }
