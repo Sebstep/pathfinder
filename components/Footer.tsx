@@ -1,25 +1,135 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Footer() {
+const companyLinks = [
+  {
+    title: "About",
+    href: "/about",
+  },
+  {
+    title: "Terms of Service",
+    href: "#",
+  },
+  {
+    title: "Privacy Policy",
+    href: "#",
+  },
+  {
+    title: "Cookie Policy",
+    href: "#",
+  },
+];
+
+const solutionLinks = [
+  {
+    title: "SAGE",
+    href: "#",
+  },
+  {
+    title: "GUARD",
+    href: "#",
+  },
+  {
+    title: "ARTISAN",
+    href: "#",
+  },
+];
+
+const partnershipLinks = [
+  {
+    title: "Partner 1",
+    href: "#",
+  },
+  {
+    title: "Partner 2",
+    href: "#",
+  },
+  {
+    title: "Partner 3",
+    href: "#",
+  },
+  {
+    title: "Partner 4",
+    href: "#",
+  },
+];
+
+function Logo() {
   return (
-    <footer className="bottom-0 w-full bg-gray-800 py-4">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between items-center">
-          <div className="w-full md:w-auto text-center md:text-left mb-4 md:mb-0 text-white">
-            <p className="text-base">&copy; 2021 Pathfinder Project</p>
+    <div className="w-full text-lg font-extrabold md:w-fit md:text-left">
+      <span className="text-violet-500">Unique</span>{" "}
+      <span className="">Fund</span>
+    </div>
+  );
+}
+
+export default function MultiColumns() {
+  return (
+    <footer className="bg-slate-200">
+      <div className="container mx-auto flex flex-col items-start space-y-12 px-8 pb-8 pt-12 md:flex-row md:space-y-0 md:space-x-12 md:px-12">
+        <div className="flex w-full flex-col space-y-4 text-center md:w-2/5 md:text-left">
+          <Logo />
+          <p className="text-sm text-slate-600">
+            Pioneering AI Technology in Higher Education to Facilitate
+            Innovation and Nurture the Development of Entrepreneurial Resources
+          </p>
+          <p className="text-sm text-slate-600">
+            &copy; {new Date().getFullYear()} Pathfinder Project. All rights
+            reserved.
+          </p>
+        </div>
+        <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
+          <div className="text-sm font-semibold">Company</div>
+          <ul className="text-sm">
+            {companyLinks.map(({ title, href }, index) => (
+              <li className="pt-3" key={index}>
+                <a
+                  className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
+                  href={href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
+          <div className="text-sm font-semibold">Deliverables</div>
+          <ul className="text-sm">
+            {solutionLinks.map(({ title, href }, index) => (
+              <li className="pt-3" key={index}>
+                <Link
+                  className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
+                  href={href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
+          <div className="text-sm font-semibold text-slate-600">
+            Partnership
           </div>
-          <div className="w-full md:w-auto text-center md:text-right">
-            <Link href="#" className="text-white hover:text-gray-400 mx-2">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-400 mx-2">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-white hover:text-gray-400 mx-2">
-              Contact Us
-            </Link>
-          </div>
+          <ul className="text-sm">
+            {partnershipLinks.map(({ title, href }, index) => (
+              <li className="pt-3" key={index}>
+                <a
+                  className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
+                  href={href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  {title}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
