@@ -87,7 +87,7 @@ export default function Home() {
             Feel free to get in touch with us for more information.
           </p>
           <Link
-            href="#about"
+            href="/about"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
           >
             Contact Us
