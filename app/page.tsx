@@ -23,13 +23,14 @@ export default function Home() {
           {/* Left Side */}
           <div className="text-center flex flex-col items-center md:pr-16 md:items-start md:text-left lg:flex-grow md:w-1/2 lg:pr-24">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-              Welcome to the Pathfinder Project
+              Welcome to the Erasmus+ Pathfinder Project
             </h1>
             <p className="mb-8 leading-relaxed">
               Pioneering AI Technology in Higher Education to Facilitate
               Innovation and Nurture the Development of Entrepreneurial
               Resources
             </p>
+            <p>Project Number: <Link href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-2-LI01-KA220-HED-000178579">2023-2-LI01-KA220-HED-000178579</Link></p>
           </div>
 
           {/* Right Side */}
