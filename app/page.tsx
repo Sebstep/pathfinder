@@ -30,7 +30,7 @@ export default function Home() {
               Innovation and Nurture the Development of Entrepreneurial
               Resources
             </p>
-            <p>Project Number: <Link href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-2-LI01-KA220-HED-000178579">2023-2-LI01-KA220-HED-000178579</Link></p>
+            <p>Project Number: <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-2-LI01-KA220-HED-000178579">2023-2-LI01-KA220-HED-000178579</a></p>
           </div>
 
           {/* Right Side */}
