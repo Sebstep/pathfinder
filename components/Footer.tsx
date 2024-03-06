@@ -23,34 +23,34 @@ const companyLinks = [
 const solutionLinks = [
   {
     title: "SAGE",
-    href: "#",
+    href: "/sage",
   },
   {
     title: "GUARD",
-    href: "#",
+    href: "/guard",
   },
   {
     title: "ARTISAN",
-    href: "#",
+    href: "/artisan",
   },
 ];
 
 const partnershipLinks = [
   {
-    title: "Partner 1",
-    href: "#",
+    title: "🇱🇮 University of Liechtenstein",
+    href: "https://www.uni.li/en/",
   },
   {
-    title: "Partner 2",
-    href: "#",
+    title: "🇫🇮 LAB University of Applied Sciences, Finland",
+    href: "https://lab.fi/en/",
   },
   {
-    title: "Partner 3",
-    href: "#",
+    title: "🇭🇷 University of Dubrovnik, Croatia",
+    href: "https://www.unidu.hr/eng/",
   },
   {
-    title: "Partner 4",
-    href: "#",
+    title: "🇱🇮 Formatio Private School, Liechtenstein",
+    href: "https://www.formatio.li/",
   },
 ];
 
@@ -114,7 +114,7 @@ export default function MultiColumns() {
         </div>
         <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
           <div className="text-sm font-semibold text-slate-600">
-            Partnership
+            Project Consortium
           </div>
           <ul className="text-sm">
             {partnershipLinks.map(({ title, href }, index) => (
