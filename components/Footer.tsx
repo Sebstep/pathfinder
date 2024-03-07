@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const companyLinks = [
   {
@@ -65,8 +66,9 @@ function Logo() {
 export default function MultiColumns() {
   return (
     <footer className="bg-slate-200">
-      <div className="container mx-auto flex flex-col items-start space-y-12 px-8 pb-8 pt-12 md:flex-row md:space-y-0 md:space-x-12 md:px-12">
-        <div className="flex w-full flex-col space-y-4 text-center md:w-2/5 md:text-left">
+      <div className="container mx-auto flex flex-col items-start space-y-12 px-8 pb-8 pt-12 md:flex-row md:space-y-0 md:space-x-12 md:px-12 md:justify-between">
+        {/* First Column */}
+        <div className="flex w-full flex-col space-y-4 text-center md:w-5/12 md:text-left">
           <Logo />
           <p className="text-sm text-slate-600">
             Pioneering AI Technology in Higher Education to Facilitate Innovation and
@@ -82,24 +84,8 @@ export default function MultiColumns() {
             &copy; {new Date().getFullYear()} Pathfinder Project. All rights reserved.
           </p>
         </div>
-        {/* <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
-          <div className="text-sm font-semibold">Company</div>
-          <ul className="text-sm">
-            {companyLinks.map(({ title, href }, index) => (
-              <li className="pt-3" key={index}>
-                <a
-                  className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
-                  href={href}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {title}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div> */}
-        <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
+        {/* Second Column */}
+        {/* <div className="flex w-full flex-col space-y-4 text-center md:w-2/12 md:text-left">
           <div className="text-sm font-semibold">Deliverables</div>
           <ul className="text-sm">
             {solutionLinks.map(({ title, href }, index) => (
@@ -116,8 +102,9 @@ export default function MultiColumns() {
               </li>
             ))}
           </ul>
-        </div>
-        <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
+        </div> */}
+        {/* Third Column */}
+        {/* <div className="flex w-full flex-col space-y-4 text-center md:w-2/12 md:text-left">
           <div className="text-sm font-semibold text-slate-600">Project Consortium</div>
           <ul className="text-sm">
             {partnershipLinks.map(({ title, href }, index) => (
@@ -134,6 +121,23 @@ export default function MultiColumns() {
               </li>
             ))}
           </ul>
+        </div> */}
+        {/* Fourth Column */}
+        <div className="flex w-full flex-col space-y-4 text-center md:w-5/12 md:text-left">
+          <div className="text-sm font-semibold">Declarations</div>
+          <p className="text-sm text-slate-600">
+            Funded by the European Union. Views and opinions expressed are however those
+            of the author(s) only and do not necessarily reflect those of the European
+            Union or the European Education and Culture Executive Agency (EACEA). Neither
+            the European Union nor EACEA can be held responsible for them.
+          </p>
+          <Image
+            src="/images/funded-by-eu-wide.png"
+            alt=""
+            width={200}
+            height={200}
+            className="w-full md:w-1/2"
+          />
         </div>
       </div>
     </footer>
