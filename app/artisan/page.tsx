@@ -4,29 +4,45 @@ import Headings from "@/components/Doubleheadings";
 export default function Home() {
   return (
     <section className="py-16">
-      <div className="w-1/2 mx-auto">
+      <div className="w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
         <Headings
           top="ARTISAN"
           bottom="AI Readiness Training for Insightful Systematic Adaptation and
           Navigation"
         />
         <p className="mb-8 leading-relaxed">
-          ARTISAN is a learning program aimed at equipping students with the knowledge and
-          skills required to utilize AI technologies effectively and responsibly. Our
-          mission is to cultivate an understanding of AI, stimulate an entrepreneurial
-          spirit, and enable students to seamlessly incorporate AI tools into their
-          academic endeavors. Furthermore, ARTISAN is dedicated to deepening
-          students&apos; comprehension of the ethical dimensions associated with AI usage,
-          while also encouraging them to explore the vast possibilities that AI presents.
+          ARTISAN is a comprehensive competency-based learning program designed to deepen
+          students&apos; knowledge and understanding of effectively and responsibly using
+          AI technology. This program empowers students with AI literacy, fosters a growth
+          mindset, and cultivates essential skills for continuous learning and
+          adaptability.
+        </p>
+        <p className="mb-4 leading-relaxed">
+          <b>Key Features of ARTISAN:</b>
         </p>
         <p className="mb-8 leading-relaxed">
-          Grounded in the principles of the European Union&apos;s DigComp 2.2 framework
-          and aligned with the European Union&apos;s AI ethics guidelines of 2022, ARTISAN
-          offers a wealth of training resources and materials designed for an engaging and
-          thorough learning experience. By embarking on the ARTISAN learning journey,
-          students will not only boost their AI literacy but also acquire the necessary
-          competencies to effectively apply AI technologies in their studies,
-          significantly enriching their educational journey.
+          <ul className="list-disc list-outside ml-4">
+            <li>
+              Foundational courses on AI principles, applications, and ethical
+              considerations
+            </li>
+            <li>
+              Hands-on projects and case studies to apply AI concepts in real-world
+              scenarios
+            </li>
+            <li>
+              Entrepreneurship modules to nurture innovation and develop business acumen
+            </li>
+            <li>
+              Career readiness workshops and mentorship opportunities for professional
+              development
+            </li>
+          </ul>
+        </p>
+        <p className="mb-8 leading-relaxed">
+          By participating in ARTISAN, students gain a competitive edge in the job market,
+          develop an entrepreneurial mindset, and become agents of change in the digital
+          era, prepared to tackle complex challenges and drive innovation.
         </p>
       </div>
     </section>

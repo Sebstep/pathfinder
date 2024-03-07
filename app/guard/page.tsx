@@ -13,18 +13,36 @@ export default function Home() {
             bottom="Generative Universal Assistant for Resourceful Development"
           />
           <p className="mb-8 leading-relaxed">
-            GUARD is an AI-powered toolkit that equips teachers with the necessary
-            resources and tools to incorporate AI technology into lesson planning and
-            teaching practices effectively. By harnessing the capabilities of AI, GUARD
-            offers a practical and user-friendly solution for educators to integrate the
-            SAGE framework into their curriculum seamlessly. This enables personalised
-            learning experiences and nurtures students&apos; critical thinking,
-            problem-solving, and creativity.
+            GUARD is an innovative AI-powered toolkit designed to assist educators in
+            implementing AI technology in lesson planning and teaching. This practical
+            solution empowers teachers to apply the SAGE framework in their coursework,
+            facilitating personalized learning experiences and igniting learners&apos;
+            creativity.
+          </p>
+          <p className="mb-4 leading-relaxed">
+            <b>Key Features of GUARD:</b>
           </p>
           <p className="mb-8 leading-relaxed">
-            With GUARD, educators can establish dynamic and engaging learning environments
-            that cater to individual learners&apos; unique needs and preferences,
-            fostering active participation and enhancing learning outcomes.
+            <ul className="list-disc list-outside ml-4">
+              <li>
+                AI-driven lesson planning tools for creating engaging and interactive
+                learning materials
+              </li>
+              <li>
+                Intelligent grading and feedback systems to streamline assessment
+                processes Adaptive learning platforms that tailor content to individual
+                student needs and preferences
+              </li>
+              <li>
+                Data analytics and visualization tools for tracking student progress and
+                identifying areas for improvement
+              </li>
+            </ul>
+          </p>
+          <p className="mb-8 leading-relaxed">
+            By leveraging the power of GUARD, educators can enhance their teaching
+            practices, optimize student learning outcomes, and stay ahead of the curve in
+            the rapidly evolving digital education landscape.
           </p>
         </div>
       </section>

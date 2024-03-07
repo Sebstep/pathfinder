@@ -10,16 +10,40 @@ export default function Home() {
           bottom="Strategies for AI-Guided Education"
         />
         <p className="mb-8 leading-relaxed">
-          The SAGE framework offers educators a detailed roadmap to navigate AI-guided
-          education. It provides a step-by-step guide that supports AI technology
-          integration and promotes a deep understanding of its impact on student learning.
+          SAGE is a comprehensive and scalable instructional framework designed to guide
+          educators in the effective and responsible integration of AI tools into higher
+          education teaching.
         </p>
         <p className="mb-8 leading-relaxed">
-          The SAGE framework encourages educators to embrace innovation by exploring new
-          teaching methodologies and tools that capitalise on AI advancements. This
-          approach enhances the learning experience and prepares students for the
-          challenges and opportunities of the future by equipping them with essential
-          skills such as problem-solving and critical thinking.
+          This strategic framework serves as a blueprint for combining artificial
+          intelligence technologies with innovative pedagogical approaches, improving
+          digital teaching and learning practices across various courses.
+        </p>
+
+        <p className="mb-4 leading-relaxed">
+          <b>Key Features of SAGE:</b>
+        </p>
+        <p className="mb-8 leading-relaxed">
+          <ul className="list-disc list-outside ml-4">
+            <li>
+              Practical guidelines for incorporating AI into curriculum development and
+              lesson planning Best practices for leveraging AI to personalize learning
+              experiences and enhance student engagement
+            </li>
+            <li>
+              Strategies for fostering critical thinking, problem-solving, and creativity
+              through AI-assisted education
+            </li>
+            <li>
+              Ethical considerations and responsible AI practices to ensure inclusive and
+              unbiased learning environments
+            </li>
+          </ul>
+        </p>
+        <p className="mb-8 leading-relaxed">
+          By adopting SAGE, educators can harness the power of AI to revolutionize their
+          teaching methods, creating dynamic and interactive learning experiences that
+          prepare students for the digital age.
         </p>
       </div>
     </section>

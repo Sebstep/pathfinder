@@ -2,18 +2,39 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Headings from "@/components/Doubleheadings";
-import { FaGlobe, FaFacebook, FaLinkedin, FaInstagram, FaEnvelope, FaLink } from "react-icons/fa";
+import {
+  FaGlobe,
+  FaFacebook,
+  FaLinkedin,
+  FaInstagram,
+  FaEnvelope,
+  FaLink,
+} from "react-icons/fa";
 
 export default function About() {
   return (
     <section className="">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container py-24 mx-auto">
         {/* Top Part Wrapper */}
-        <div className="flex flex-col text-center w-full mb-20">
+        <div className="flex flex-col py-16 w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
           <Headings
             top="PROJECT CONSORTIUM"
             bottom="Participating Organizations"
           />
+          <p className="mb-8 leading-relaxed">
+            Pathfinder is a collaborative Erasmus+ project that brings together leading
+            institutions in higher education to address the challenges and opportunities
+            presented by Artificial Intelligence (AI) in the educational landscape. Our
+            consortium comprises esteemed universities and institutions from across
+            Europe, each contributing their unique expertise and perspectives to this
+            transformative initiative.
+          </p>
+          <p className="mb-8 leading-relaxed">
+            Our approach is guided by the principles of collaboration, knowledge-sharing,
+            and responsible innovation. We strive to create a future where AI is embraced
+            as a powerful tool for enhancing educational experiences and preparing
+            learners for the digital era.
+          </p>
         </div>
 
         {/* Partnership Wrapper */}
@@ -39,7 +60,7 @@ export default function About() {
                   on sustainability and innovation.
                 </p>
                 <span className="inline-flex">
-                <a
+                  <a
                     className="text-gray-500 hover:text-eu-blue"
                     href="mailto:sebastian.moder@uni.li"
                     rel="noopener noreferrer"

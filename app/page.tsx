@@ -46,10 +46,33 @@ export default function Home() {
             bottom="Empowering Education Through AI"
           />
           <p className="mb-8 leading-relaxed">
-            Our goal is to enhance AI understanding in higher education, equipping
-            educators and students with resources for its responsible use. We aim to boost
-            digital readiness, foster innovation, and improve employability through
-            innovative educational strategies and entrepreneurial skill development.
+            Pathfinder is an Erasmus+ project that aims to advance the understanding and
+            adoption of Artificial Intelligence (AI) technology in higher education. We
+            equip educators and students with the knowledge, resources, and tools to
+            facilitate the effective and responsible integration of AI in teaching and
+            learning.
+          </p>
+
+          <p className="mb-4 leading-relaxed">
+            Our mission is to foster digital readiness, promote entrepreneurial
+            innovation, and enhance employability by:
+          </p>
+
+          <p className="mb-8 leading-relaxed">
+            <ul className="list-disc list-outside ml-4">
+              <li>Developing strategic guidelines for AI integration (SAGE)</li>
+              <li>
+                Creating AI-based tools for lesson planning and teaching support (GUARD)
+              </li>
+              <li>
+                Providing a learning journey to enhance students&apos; AI literacy
+                (ARTISAN)
+              </li>
+            </ul>
+          </p>
+          <p className="mb-8 leading-relaxed">
+            Explore our website to learn more about our innovative approach to
+            transforming higher education through AI.
           </p>
         </div>
       </section>
@@ -93,7 +116,7 @@ export default function Home() {
         />
         <div className="text-center">
           <InstitutionLogos />
-          <p className="mb-8">Feel free to get in touch with us for more information.</p>
+          <p className="my-8">Feel free to get in touch with us for more information.</p>
           <Link
             href="/about"
             className="bg-eu-blue hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full">
