@@ -14,9 +14,9 @@ import {
 export default function About() {
   return (
     <section className="">
-      <div className="container py-24 mx-auto">
+      <div className="container py-16 mx-auto">
         {/* Top Part Wrapper */}
-        <div className="flex flex-col py-16 w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
+        <div className="flex flex-col mb-16 w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
           <Headings
             top="PROJECT CONSORTIUM"
             bottom="Participating Organizations"

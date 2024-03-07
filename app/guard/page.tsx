@@ -28,10 +28,10 @@ export default function Home() {
                 AI-driven lesson planning tools for creating engaging and interactive
                 learning materials
               </li>
+              <li>Intelligent feedback systems to streamline assessment processes </li>
               <li>
-                Intelligent grading and feedback systems to streamline assessment
-                processes Adaptive learning platforms that tailor content to individual
-                student needs and preferences
+                Adaptive learning platforms that tailor content to individual student
+                needs and preferences
               </li>
               <li>
                 Data analytics and visualization tools for tracking student progress and
