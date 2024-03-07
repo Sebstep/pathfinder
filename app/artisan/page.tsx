@@ -10,7 +10,7 @@ export default function Home() {
           bottom="AI Readiness Training for Insightful Systematic Adaptation and
           Navigation"
         />
-        <p className="mb-8">
+        <p className="mb-8 leading-relaxed">
           ARTISAN is a learning program aimed at equipping students with the knowledge and
           skills required to utilize AI technologies effectively and responsibly. Our
           mission is to cultivate an understanding of AI, stimulate an entrepreneurial
@@ -19,7 +19,7 @@ export default function Home() {
           students&apos; comprehension of the ethical dimensions associated with AI usage,
           while also encouraging them to explore the vast possibilities that AI presents.
         </p>
-        <p className="mb-8">
+        <p className="mb-8 leading-relaxed">
           Grounded in the principles of the European Union&apos;s DigComp 2.2 framework
           and aligned with the European Union&apos;s AI ethics guidelines of 2022, ARTISAN
           offers a wealth of training resources and materials designed for an engaging and

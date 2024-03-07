@@ -12,7 +12,7 @@ export default function Home() {
             top="GUARD"
             bottom="Generative Universal Assistant for Resourceful Development"
           />
-          <p className="mb-8">
+          <p className="mb-8 leading-relaxed">
             GUARD is an AI-powered toolkit that equips teachers with the necessary
             resources and tools to incorporate AI technology into lesson planning and
             teaching practices effectively. By harnessing the capabilities of AI, GUARD
@@ -21,7 +21,7 @@ export default function Home() {
             learning experiences and nurtures students&apos; critical thinking,
             problem-solving, and creativity.
           </p>
-          <p className="mb-8">
+          <p className="mb-8 leading-relaxed">
             With GUARD, educators can establish dynamic and engaging learning environments
             that cater to individual learners&apos; unique needs and preferences,
             fostering active participation and enhancing learning outcomes.
