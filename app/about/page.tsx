@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Headings from "@/components/Doubleheadings";
-import { FaGlobe, FaFacebook, FaLinkedin, FaInstagram, FaLink } from "react-icons/fa";
+import { FaGlobe, FaFacebook, FaLinkedin, FaInstagram, FaEnvelope, FaLink } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -43,8 +43,15 @@ export default function About() {
                   on sustainability and innovation.
                 </p>
                 <span className="inline-flex">
-                  <a
+                <a
                     className="text-gray-500 hover:text-eu-blue"
+                    href="mailto:sebastian.moder@uni.li"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    <FaEnvelope size={24} />
+                  </a>
+                  <a
+                    className="text-gray-500 hover:text-eu-blue ml-4"
                     href="https://www.uni.li/en/"
                     rel="noopener noreferrer"
                     target="_blank">
