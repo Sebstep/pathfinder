@@ -4,7 +4,7 @@ import Headings from "@/components/Doubleheadings";
 export default function Home() {
   return (
     <section className="py-16">
-      <div className="w-1/2 mx-auto">
+      <div className="w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
         <Headings
           top="SAGE"
           bottom="Strategies for AI-Guided Education"

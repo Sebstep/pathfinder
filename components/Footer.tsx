@@ -73,7 +73,7 @@ export default function MultiColumns() {
             Nurture the Development of Entrepreneurial Resources
           </p>
           <p className="text-sm text-slate-600">
-            Project Number:{" "}
+            Project:{" "}
             <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-2-LI01-KA220-HED-000178579">
               2023-2-LI01-KA220-HED-000178579
             </a>

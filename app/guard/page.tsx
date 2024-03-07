@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="">
       <section className="py-16">
-        <div className="w-1/2 mx-auto">
+        <div className="w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
           <Headings
             top="GUARD"
             bottom="Generative Universal Assistant for Resourceful Development"

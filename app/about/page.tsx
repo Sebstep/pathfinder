@@ -15,6 +15,7 @@ export default function About() {
             bottom="Participating Organizations"
           />
           <p className="mx-auto leading-relaxed lg:w-2/3">
+            {/* TODO: Remove this sample text */}
             Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify,
             subway tile poke farm-to-table. Franzen you probably havent heard of them.
           </p>

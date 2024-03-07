@@ -40,20 +40,17 @@ export default function Home() {
 
       {/* <!-- Objectives Section --> */}
       <section className="py-16 bg-slate-100">
-        <div className="w-1/2 mx-auto">
+        <div className="w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
           <Headings
             top="PROJECT OBJECTIVE"
             bottom="Empowering Education Through AI"
           />
-          <div className="text-center">
-            <p className="mb-8">
-              Our goal is to enhance AI understanding in higher education, equipping
-              educators and students with resources for its responsible use. We aim to
-              boost digital readiness, foster innovation, and improve employability
-              through innovative educational strategies and entrepreneurial skill
-              development.
-            </p>
-          </div>
+          <p className="mb-8">
+            Our goal is to enhance AI understanding in higher education, equipping
+            educators and students with resources for its responsible use. We aim to boost
+            digital readiness, foster innovation, and improve employability through
+            innovative educational strategies and entrepreneurial skill development.
+          </p>
         </div>
       </section>
 
