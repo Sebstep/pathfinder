@@ -15,16 +15,18 @@ export const metadata: Metadata = {
 
 // TODO: The content currently scrolls behind the footer.
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+          rel="icon"
+          href="/icon.ico"
+        />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0"
+        />
       </head>
       <body className={inter.className}>
         <Navigation />
