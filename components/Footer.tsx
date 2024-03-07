@@ -37,28 +37,27 @@ const solutionLinks = [
 
 const partnershipLinks = [
   {
-    title: "🇱🇮 University of Liechtenstein",
+    title: "University of Liechtenstein (FL)",
     href: "https://www.uni.li/en/",
   },
   {
-    title: "🇫🇮 LAB University of Applied Sciences, Finland",
+    title: "LAB University of Applied Sciences (FI)",
     href: "https://lab.fi/en/",
   },
   {
-    title: "🇭🇷 University of Dubrovnik, Croatia",
+    title: "University of Dubrovnik (HR)",
     href: "https://www.unidu.hr/eng/",
   },
   {
-    title: "🇱🇮 Formatio Private School, Liechtenstein",
-    href: "https://www.formatio.li/",
+    title: "Formatio Private School (FL)",
+    href: "https://www.formatio.li/en/",
   },
 ];
 
 function Logo() {
   return (
     <div className="w-full text-lg font-extrabold md:w-fit md:text-left">
-      <span className="text-violet-500">Unique</span>{" "}
-      <span className="">Fund</span>
+      <span className="text-eu-blue">Erasmus+ Pathfinder</span>{" "}
     </div>
   );
 }
@@ -70,15 +69,20 @@ export default function MultiColumns() {
         <div className="flex w-full flex-col space-y-4 text-center md:w-2/5 md:text-left">
           <Logo />
           <p className="text-sm text-slate-600">
-            Pioneering AI Technology in Higher Education to Facilitate
-            Innovation and Nurture the Development of Entrepreneurial Resources
+            Pioneering AI Technology in Higher Education to Facilitate Innovation and
+            Nurture the Development of Entrepreneurial Resources
           </p>
           <p className="text-sm text-slate-600">
-            &copy; {new Date().getFullYear()} Pathfinder Project. All rights
-            reserved.
+            Project Number:{" "}
+            <a href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-2-LI01-KA220-HED-000178579">
+              2023-2-LI01-KA220-HED-000178579
+            </a>
+          </p>
+          <p className="text-sm text-slate-600">
+            &copy; {new Date().getFullYear()} Pathfinder Project. All rights reserved.
           </p>
         </div>
-        <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
+        {/* <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
           <div className="text-sm font-semibold">Company</div>
           <ul className="text-sm">
             {companyLinks.map(({ title, href }, index) => (
@@ -94,18 +98,19 @@ export default function MultiColumns() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
         <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
           <div className="text-sm font-semibold">Deliverables</div>
           <ul className="text-sm">
             {solutionLinks.map(({ title, href }, index) => (
-              <li className="pt-3" key={index}>
+              <li
+                className="pt-3"
+                key={index}>
                 <Link
                   className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
                   href={href}
                   rel="noopener noreferrer"
-                  target="_blank"
-                >
+                  target="_blank">
                   {title}
                 </Link>
               </li>
@@ -113,18 +118,17 @@ export default function MultiColumns() {
           </ul>
         </div>
         <div className="w-full text-center text-slate-600 md:w-1/5 md:text-left">
-          <div className="text-sm font-semibold text-slate-600">
-            Project Consortium
-          </div>
+          <div className="text-sm font-semibold text-slate-600">Project Consortium</div>
           <ul className="text-sm">
             {partnershipLinks.map(({ title, href }, index) => (
-              <li className="pt-3" key={index}>
+              <li
+                className="pt-3"
+                key={index}>
                 <a
                   className="underline decoration-transparent underline-offset-4 transition hover:decoration-slate-700"
                   href={href}
                   rel="noopener noreferrer"
-                  target="_blank"
-                >
+                  target="_blank">
                   {title}
                 </a>
               </li>
