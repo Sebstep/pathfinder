@@ -44,16 +44,16 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <SignpostIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              mr: 4,
               display: { xs: "none", md: "flex" },
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".2rem",
               color: "inherit",
               textDecoration: "none",
             }}>
@@ -105,7 +105,7 @@ function ResponsiveAppBar() {
             component="a"
             href="/"
             sx={{
-              mr: 2,
+              mr: 4,
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "monospace",
@@ -138,7 +138,7 @@ function ResponsiveAppBar() {
                 />
               </IconButton>
             </Tooltip>
-            <Menu
+            {/* <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
@@ -160,7 +160,7 @@ function ResponsiveAppBar() {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           </Box>
         </Toolbar>
       </Container>

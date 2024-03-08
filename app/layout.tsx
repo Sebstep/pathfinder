@@ -13,8 +13,6 @@ export const metadata: Metadata = {
   description: "An Erasmus+ project for higher education",
 };
 
-// TODO: The content currently scrolls behind the footer.
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

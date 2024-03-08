@@ -45,7 +45,7 @@ export default function Home() {
             top="PROJECT OBJECTIVE"
             bottom="Empowering Education Through AI"
           />
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8">
             Pathfinder is an Erasmus+ project that aims to advance the understanding and
             adoption of Artificial Intelligence (AI) technology in higher education. We
             equip educators and students with the knowledge, resources, and tools to
@@ -53,12 +53,12 @@ export default function Home() {
             learning.
           </p>
 
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4">
             Our mission is to foster digital readiness, promote entrepreneurial
             innovation, and enhance employability by:
           </p>
 
-          <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+          <ul className="mb-8">
             <li>Developing strategic guidelines for AI integration (SAGE)</li>
             <li>
               Creating AI-based tools for lesson planning and teaching support (GUARD)
@@ -67,7 +67,7 @@ export default function Home() {
               Providing a learning journey to enhance students&apos; AI literacy (ARTISAN)
             </li>
           </ul>
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8">
             Explore our website to learn more about our innovative approach to
             transforming higher education through AI.
           </p>

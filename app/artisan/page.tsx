@@ -17,10 +17,10 @@ export default function Home() {
           mindset, and cultivates essential skills for continuous learning and
           adaptability.
         </p>
-        <p className="mb-4 leading-relaxed">
+        <p className="mb-4">
           <b>Key Features of ARTISAN:</b>
         </p>
-        <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+        <ul className="mb-8">
           <li>
             Foundational courses on AI principles, applications, and ethical
             considerations
@@ -37,7 +37,7 @@ export default function Home() {
             development
           </li>
         </ul>
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-8">
           By participating in ARTISAN, students gain a competitive edge in the job market,
           develop an entrepreneurial mindset, and become agents of change in the digital
           era, prepared to tackle complex challenges and drive innovation.

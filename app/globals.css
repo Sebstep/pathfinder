@@ -4,7 +4,10 @@
 
 @layer base {
   p {
-    @apply text-lg;
+    @apply text-lg leading-relaxed;
+  }
+  ul {
+    @apply text-lg ml-4 list-disc list-outside;
   }
 }
 

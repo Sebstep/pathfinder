@@ -9,21 +9,21 @@ export default function Home() {
           top="SAGE"
           bottom="Strategies for AI-Guided Education"
         />
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-8">
           SAGE is a comprehensive and scalable instructional framework designed to guide
           educators in the effective and responsible integration of AI tools into higher
           education teaching.
         </p>
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-8">
           This strategic framework serves as a blueprint for combining artificial
           intelligence technologies with innovative pedagogical approaches, improving
           digital teaching and learning practices across various courses.
         </p>
 
-        <p className="mb-4 leading-relaxed">
+        <p className="mb-4">
           <b>Key Features of SAGE:</b>
         </p>
-        <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+        <ul className="mb-8 ">
           <li>
             Practical guidelines for incorporating AI into curriculum development and
             lesson planning Best practices for leveraging AI to personalize learning
@@ -38,7 +38,7 @@ export default function Home() {
             unbiased learning environments
           </li>
         </ul>
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-8">
           By adopting SAGE, educators can harness the power of AI to revolutionize their
           teaching methods, creating dynamic and interactive learning experiences that
           prepare students for the digital age.

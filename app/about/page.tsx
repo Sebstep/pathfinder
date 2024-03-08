@@ -172,7 +172,7 @@ export default function About() {
           top="PROJECT CONSORTIUM"
           bottom="Participating Organizations"
         />
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-8">
           Pathfinder is a collaborative Erasmus+ project that brings together leading
           institutions in higher education to address the challenges and opportunities
           presented by Artificial Intelligence (AI) in the educational landscape. Our
@@ -180,7 +180,7 @@ export default function About() {
           each contributing their unique expertise and perspectives to this transformative
           initiative.
         </p>
-        <p className="mb-8 leading-relaxed">
+        <p className="mb-8">
           Our approach is guided by the principles of collaboration, knowledge-sharing,
           and responsible innovation. We strive to create a future where AI is embraced as
           a powerful tool for enhancing educational experiences and preparing learners for

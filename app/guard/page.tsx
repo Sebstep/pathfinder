@@ -12,17 +12,17 @@ export default function Home() {
             top="GUARD"
             bottom="Generative Universal Assistant for Resourceful Development"
           />
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8">
             GUARD is an innovative AI-powered toolkit designed to assist educators in
             implementing AI technology in lesson planning and teaching. This practical
             solution empowers teachers to apply the SAGE framework in their coursework,
             facilitating personalized learning experiences and igniting learners&apos;
             creativity.
           </p>
-          <p className="mb-4 leading-relaxed">
+          <p className="mb-4">
             <b>Key Features of GUARD:</b>
           </p>
-          <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+          <ul className="mb-8">
             <li>
               AI-driven lesson planning tools for creating engaging and interactive
               learning materials
@@ -37,7 +37,7 @@ export default function Home() {
               identifying areas for improvement
             </li>
           </ul>
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8">
             By leveraging the power of GUARD, educators can enhance their teaching
             practices, optimize student learning outcomes, and stay ahead of the curve in
             the rapidly evolving digital education landscape.
