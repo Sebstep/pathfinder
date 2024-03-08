@@ -58,18 +58,15 @@ export default function Home() {
             innovation, and enhance employability by:
           </p>
 
-          <p className="mb-8 leading-relaxed">
-            <ul className="list-disc list-outside ml-4">
-              <li>Developing strategic guidelines for AI integration (SAGE)</li>
-              <li>
-                Creating AI-based tools for lesson planning and teaching support (GUARD)
-              </li>
-              <li>
-                Providing a learning journey to enhance students&apos; AI literacy
-                (ARTISAN)
-              </li>
-            </ul>
-          </p>
+          <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+            <li>Developing strategic guidelines for AI integration (SAGE)</li>
+            <li>
+              Creating AI-based tools for lesson planning and teaching support (GUARD)
+            </li>
+            <li>
+              Providing a learning journey to enhance students&apos; AI literacy (ARTISAN)
+            </li>
+          </ul>
           <p className="mb-8 leading-relaxed">
             Explore our website to learn more about our innovative approach to
             transforming higher education through AI.
