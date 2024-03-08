@@ -23,23 +23,21 @@ export default function Home() {
         <p className="mb-4 leading-relaxed">
           <b>Key Features of SAGE:</b>
         </p>
-        <p className="mb-8 leading-relaxed">
-          <ul className="list-disc list-outside ml-4">
-            <li>
-              Practical guidelines for incorporating AI into curriculum development and
-              lesson planning Best practices for leveraging AI to personalize learning
-              experiences and enhance student engagement
-            </li>
-            <li>
-              Strategies for fostering critical thinking, problem-solving, and creativity
-              through AI-assisted education
-            </li>
-            <li>
-              Ethical considerations and responsible AI practices to ensure inclusive and
-              unbiased learning environments
-            </li>
-          </ul>
-        </p>
+        <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+          <li>
+            Practical guidelines for incorporating AI into curriculum development and
+            lesson planning Best practices for leveraging AI to personalize learning
+            experiences and enhance student engagement
+          </li>
+          <li>
+            Strategies for fostering critical thinking, problem-solving, and creativity
+            through AI-assisted education
+          </li>
+          <li>
+            Ethical considerations and responsible AI practices to ensure inclusive and
+            unbiased learning environments
+          </li>
+        </ul>
         <p className="mb-8 leading-relaxed">
           By adopting SAGE, educators can harness the power of AI to revolutionize their
           teaching methods, creating dynamic and interactive learning experiences that

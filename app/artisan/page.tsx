@@ -20,25 +20,23 @@ export default function Home() {
         <p className="mb-4 leading-relaxed">
           <b>Key Features of ARTISAN:</b>
         </p>
-        <p className="mb-8 leading-relaxed">
-          <ul className="list-disc list-outside ml-4">
-            <li>
-              Foundational courses on AI principles, applications, and ethical
-              considerations
-            </li>
-            <li>
-              Hands-on projects and case studies to apply AI concepts in real-world
-              scenarios
-            </li>
-            <li>
-              Entrepreneurship modules to nurture innovation and develop business acumen
-            </li>
-            <li>
-              Career readiness workshops and mentorship opportunities for professional
-              development
-            </li>
-          </ul>
-        </p>
+        <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+          <li>
+            Foundational courses on AI principles, applications, and ethical
+            considerations
+          </li>
+          <li>
+            Hands-on projects and case studies to apply AI concepts in real-world
+            scenarios
+          </li>
+          <li>
+            Entrepreneurship modules to nurture innovation and develop business acumen
+          </li>
+          <li>
+            Career readiness workshops and mentorship opportunities for professional
+            development
+          </li>
+        </ul>
         <p className="mb-8 leading-relaxed">
           By participating in ARTISAN, students gain a competitive edge in the job market,
           develop an entrepreneurial mindset, and become agents of change in the digital

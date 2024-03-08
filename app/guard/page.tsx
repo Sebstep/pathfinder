@@ -22,23 +22,21 @@ export default function Home() {
           <p className="mb-4 leading-relaxed">
             <b>Key Features of GUARD:</b>
           </p>
-          <p className="mb-8 leading-relaxed">
-            <ul className="list-disc list-outside ml-4">
-              <li>
-                AI-driven lesson planning tools for creating engaging and interactive
-                learning materials
-              </li>
-              <li>Intelligent feedback systems to streamline assessment processes </li>
-              <li>
-                Adaptive learning platforms that tailor content to individual student
-                needs and preferences
-              </li>
-              <li>
-                Data analytics and visualization tools for tracking student progress and
-                identifying areas for improvement
-              </li>
-            </ul>
-          </p>
+          <ul className="mb-8 leading-relaxed text-lg list-disc list-outside ml-4">
+            <li>
+              AI-driven lesson planning tools for creating engaging and interactive
+              learning materials
+            </li>
+            <li>Intelligent feedback systems to streamline assessment processes </li>
+            <li>
+              Adaptive learning platforms that tailor content to individual student needs
+              and preferences
+            </li>
+            <li>
+              Data analytics and visualization tools for tracking student progress and
+              identifying areas for improvement
+            </li>
+          </ul>
           <p className="mb-8 leading-relaxed">
             By leveraging the power of GUARD, educators can enhance their teaching
             practices, optimize student learning outcomes, and stay ahead of the curve in
