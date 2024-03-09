@@ -126,6 +126,7 @@ function ResponsiveAppBar() {
           <nav className="hidden md:flex space-x-2">
             {navlinks.map(([title, url]) => (
               <a
+                key={title}
                 href={url}
                 className="rounded-lg px-2 py-1 text-slate-200 font-medium hover:bg-slate-200 hover:text-slate-800">
                 {title}
