@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -16,7 +15,15 @@ import MenuItem from "@mui/material/MenuItem";
 import Link from "next/link";
 import SignpostIcon from "@mui/icons-material/Signpost";
 
+const navlinks = [
+  ["Home", "/"],
+  ["SAGE", "/sage"],
+  ["GUARD", "/guard"],
+  ["ARTISAN", "/artisan"],
+  ["About us", "/about"],
+];
 const pages = ["SAGE", "GUARD", "ARTISAN", "About"];
+
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
@@ -60,10 +67,10 @@ function ResponsiveAppBar() {
             PATHFINDER
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <div className="flex flex-grow md:hidden">
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label="navigation menu"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -97,7 +104,7 @@ function ResponsiveAppBar() {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </div>
           <SignpostIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
@@ -116,7 +123,16 @@ function ResponsiveAppBar() {
             }}>
             PATHFINDER
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <nav className="hidden md:flex space-x-2">
+            {navlinks.map(([title, url]) => (
+              <a
+                href={url}
+                className="rounded-lg px-2 py-1 text-slate-200 font-medium hover:bg-slate-200 hover:text-slate-800">
+                {title}
+              </a>
+            ))}
+          </nav>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -125,9 +141,9 @@ function ResponsiveAppBar() {
                 <Link href={`${page.toLowerCase()}`}>{page}</Link>
               </Button>
             ))}
-          </Box>
+          </Box> */}
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton
                 onClick={handleOpenUserMenu}
@@ -138,7 +154,7 @@ function ResponsiveAppBar() {
                 />
               </IconButton>
             </Tooltip>
-            {/* <Menu
+            <Menu
               sx={{ mt: "45px" }}
               id="menu-appbar"
               anchorEl={anchorElUser}
@@ -160,8 +176,8 @@ function ResponsiveAppBar() {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
-            </Menu> */}
-          </Box>
+            </Menu>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
