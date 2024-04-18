@@ -47,10 +47,10 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="container m-auto">
+      {/* <div className="container m-auto">
         <Typography variant="h1">Chat</Typography>
         <Rhf />
-      </div>
+      </div> */}
     </main>
   );
 }
