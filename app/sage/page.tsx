@@ -26,8 +26,11 @@ export default function Home() {
         <ul className="mb-8 ">
           <li>
             Practical guidelines for incorporating AI into curriculum development and
-            lesson planning Best practices for leveraging AI to personalize learning
-            experiences and enhance student engagement
+            lesson planning
+          </li>
+          <li>
+            Best practices for leveraging AI to personalize learning experiences and
+            enhance student engagement
           </li>
           <li>
             Strategies for fostering critical thinking, problem-solving, and creativity
