@@ -46,31 +46,24 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar className="fixed">
+    <AppBar className="fixed bg-eu-blue shadow-md">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          {/* Logo for Desktop */}
           <SignpostIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h5"
-            noWrap
-            component="a"
+            component={Link}
             href="/"
-            sx={{
-              mr: 4,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".2rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}>
+            className="hidden md:flex font-mono font-bold tracking-wider text-white no-underline hover:opacity-90 mr-4">
             PATHFINDER
           </Typography>
 
+          {/* Mobile Navigation Menu */}
           <div className="flex flex-grow md:hidden">
             <IconButton
               size="large"
-              aria-label="navigation menu"
+              aria-label="Open navigation menu"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -133,52 +126,6 @@ function ResponsiveAppBar() {
               </a>
             ))}
           </nav>
-          {/* <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}>
-                <Link href={`${page.toLowerCase()}`}>{page}</Link>
-              </Button>
-            ))}
-          </Box> */}
-
-          {/* <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton
-                onClick={handleOpenUserMenu}
-                sx={{ p: 0 }}>
-                <Avatar
-                  alt="Remy Sharp"
-                  src="/static/images/avatar/2.jpg"
-                />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}>
-              {settings.map((setting) => (
-                <MenuItem
-                  key={setting}
-                  onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
