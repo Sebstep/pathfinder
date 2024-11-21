@@ -4,25 +4,33 @@ import Link from "next/link";
 type FeaturecardProps = {
   title: string;
   description: string;
-  icon: any;
+  icon: React.ReactNode;
   link: string;
 };
 
-export default function Featurecard(props: FeaturecardProps) {
+export default function Featurecard({
+  title,
+  description,
+  icon,
+  link,
+}: FeaturecardProps) {
   return (
     <Link
-      href={props.link}
-      className="p-4 md:w-1/3 ">
-      <div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col group border border-transparent px-5 py-4 transition-colors hover:border-gray-500 hover:bg-gray-300">
-        <div className="flex items-center mb-3 p-2">
-          <div className="w-12 h-12 mr-4 inline-flex items-center justify-center rounded-full bg-eu-blue text-white flex-shrink-0 transition-transform group-hover:-translate-y-1 motion-reduce:transform-none">
-            {props.icon}
+      href={link}
+      aria-label={`Learn more about ${title}`}
+      className="block w-full md:w-1/3 p-4">
+      <div className="flex flex-col h-full rounded-lg p-8 group border border-gray-200 backdrop-blur-lg bg-white/30 shadow-lg transition-all hover:shadow-xl hover:scale-105 hover:bg-white/40">
+        <div className="flex items-center mb-4">
+          <div className="w-14 h-14 mr-4 flex items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-blue-500 text-white shadow-md transition-transform group-hover:scale-110">
+            {icon}
           </div>
-          <h3 className="text-2xl font-medium mb-4 text-left">{props.title}</h3>
+          <h3 className="text-2xl font-medium text-gray-900">{title}</h3>
         </div>
         <div className="flex-grow">
-          <p className="leading-relaxed text-base">{props.description}</p>
-          <p className="mt-3 text-eu-blue inline-flex items-center">Learn More -&gt;</p>
+          <p className="text-base leading-relaxed text-gray-700">{description}</p>
+          <p className="mt-3 text-blue-600 inline-flex items-center font-medium group-hover:underline">
+            Learn More &rarr;
+          </p>
         </div>
       </div>
     </Link>
