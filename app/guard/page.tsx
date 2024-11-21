@@ -1,9 +1,7 @@
 import React from "react";
-import Rhf from "@/components/forms/Rhf";
-import Typography from "@mui/material/Typography";
 import Headings from "@/components/Doubleheadings";
 
-export default function Home() {
+export default function Guard() {
   return (
     <main className="">
       <section className="py-16">
@@ -13,7 +11,7 @@ export default function Home() {
             bottom="Generative Universal Assistant for Resourceful Development"
           />
           <p className="mb-8">
-            GUARD is an innovative AI-powered toolkit designed to assist educators in
+            GUARD will be an innovative AI-powered toolkit designed to assist educators in
             implementing AI technology in lesson planning and teaching. This practical
             solution empowers teachers to apply the SAGE framework in their coursework,
             facilitating personalized learning experiences and igniting learners&apos;
@@ -44,11 +42,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      {/* <div className="container m-auto">
-        <Typography variant="h1">Chat</Typography>
-        <Rhf />
-      </div> */}
     </main>
   );
 }
