@@ -6,6 +6,7 @@ type FeaturecardProps = {
   description: string;
   icon: React.ReactNode;
   link: string;
+  target?: string;
 };
 
 export default function Featurecard({
@@ -13,11 +14,14 @@ export default function Featurecard({
   description,
   icon,
   link,
+  target="_self",
 }: FeaturecardProps) {
   return (
     <Link
       href={link}
       aria-label={`Learn more about ${title}`}
+      target={target}
+      rel={target === "_blank" ? "noopener noreferrer" : undefined}
       className="block w-full md:w-1/3 p-4">
       <div className="flex flex-col h-full rounded-lg p-8 group border border-gray-200 backdrop-blur-lg bg-white/30 shadow-lg transition-all hover:shadow-xl hover:scale-105 hover:bg-white/40">
         <div className="flex items-center mb-4">

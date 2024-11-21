@@ -116,7 +116,8 @@ function ResponsiveAppBar() {
                 key={title}
                 href={path}
                 className="rounded-lg px-1 py-1 text-gray-200 font-medium hover:bg-gray-200 hover:text-gray-900 transition-colors"
-                target={target}>
+                target={target}
+                rel={target === "_blank" ? "noopener noreferrer" : undefined}>
                 {title}
               </Link>
             ))}

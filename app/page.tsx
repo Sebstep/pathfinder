@@ -16,6 +16,7 @@ const projectDeliverables = [
       />
     ),
     link: "https://sage.ai-pathfinder.eu",
+    target: "_blank",
   },
   {
     title: "GUARD",
@@ -137,6 +138,7 @@ export default function Home() {
                 description={feature.description}
                 icon={feature.icon}
                 link={feature.link}
+                target={feature.target}
               />
             ))}
           </div>
