@@ -49,7 +49,7 @@ function ResponsiveAppBar() {
             variant="h5"
             component={Link}
             href="/"
-            className="hidden md:flex font-mono font-bold tracking-wider text-white no-underline hover:opacity-90 mr-2">
+            className="hidden md:flex font-mono font-bold tracking-wider text-white no-underline hover:opacity-90 mr-4">
             PATHFINDER
           </Typography>
 
@@ -97,6 +97,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </div>
+
           {/* Logo for Mobile */}
           <SignpostIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
@@ -107,13 +108,14 @@ function ResponsiveAppBar() {
             className="flex-grow md:hidden font-mono font-bold tracking-wider text-white no-underline hover:opacity-90">
             PATHFINDER
           </Typography>
+
           {/* Desktop Navigation Menu */}
           <nav className="hidden md:flex space-x-4">
             {navlinks.map(({ title, path, target }) => (
               <Link
                 key={title}
                 href={path}
-                className="rounded-lg px-3 py-1 text-gray-200 font-medium hover:bg-gray-200 hover:text-gray-900 transition-colors"
+                className="rounded-lg px-1 py-1 text-gray-200 font-medium hover:bg-gray-200 hover:text-gray-900 transition-colors"
                 target={target}>
                 {title}
               </Link>
