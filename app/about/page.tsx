@@ -1,15 +1,8 @@
 import React from "react";
-import { ReactNode } from "react";
 import Image from "next/image";
 import Headings from "@/components/Doubleheadings";
-import {
-  FaGlobe,
-  FaFacebook,
-  FaLinkedin,
-  FaInstagram,
-  FaEnvelope,
-  FaLink,
-} from "react-icons/fa";
+import Link from "next/link";
+import { FaGlobe, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 interface SocialLink {
   name: string;
@@ -138,18 +131,18 @@ const partners: Partner[] = [
 
 function SocialIcons({ links }: { links: SocialLink[] }) {
   return (
-    <span className="inline-flex">
+    <div className="flex space-x-4">
       {links.map((link, index) => (
-        <a
+        <Link
           key={index}
-          className="text-gray-500 hover:text-eu-blue mr-4"
           href={link.url}
+          target="_blank"
           rel="noopener noreferrer"
-          target="_blank">
+          className="text-gray-500 hover:text-eu-blue transition-colors">
           {link.icon}
-        </a>
+        </Link>
       ))}
-    </span>
+    </div>
   );
 }
 
@@ -172,7 +165,7 @@ export default function About() {
           top="PROJECT CONSORTIUM"
           bottom="Participating Organizations"
         />
-        <p className="mb-8">
+        <p className="mb-6 text-gray-600 leading-relaxed">
           Pathfinder is a collaborative Erasmus+ project that brings together leading
           institutions in higher education to address the challenges and opportunities
           presented by Artificial Intelligence (AI) in the educational landscape. Our
@@ -180,7 +173,7 @@ export default function About() {
           each contributing their unique expertise and perspectives to this transformative
           initiative.
         </p>
-        <p className="mb-8">
+        <p className="text-gray-600 leading-relaxed">
           Our approach is guided by the principles of collaboration, knowledge-sharing,
           and responsible innovation. We strive to create a future where AI is embraced as
           a powerful tool for enhancing educational experiences and preparing learners for
