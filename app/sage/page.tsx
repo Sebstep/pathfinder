@@ -1,7 +1,7 @@
 import React from "react";
 import Headings from "@/components/Doubleheadings";
 
-export default function Home() {
+export default function Sage() {
   return (
     <section className="py-16">
       <div className="w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
