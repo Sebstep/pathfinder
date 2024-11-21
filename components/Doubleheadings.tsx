@@ -1,10 +1,16 @@
-export default function Headings(props: { top: string; bottom: string }) {
+interface HeadingsProps {
+  top: string;
+  bottom: string;
+  className?: string;
+}
+
+export default function Headings({ top, bottom, className = "" }: HeadingsProps) {
   return (
     <div className="flex flex-col text-center w-full mb-8">
-      <h2 className="text-xl text-eu-blue tracking-widest font-medium text-center mb-1">
-        {props.top}
+      <h2 className="text-xl text-eu-blue tracking-widest font-semibold uppercase">
+        {top}
       </h2>
-      <h3 className="text-3xl font-medium">{props.bottom}</h3>
+      <h3 className="text-3xl font-semibold leading-snug">{bottom}</h3>
     </div>
   );
 }
