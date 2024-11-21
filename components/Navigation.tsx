@@ -8,23 +8,17 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import Link from "next/link";
 import SignpostIcon from "@mui/icons-material/Signpost";
 
 const navlinks = [
-  ["Home", "/"],
-  ["SAGE", "/sage"],
-  ["GUARD", "/guard"],
-  ["ARTISAN", "/artisan"],
-  ["About us", "/about"],
+  { title: "Home", path: "/", target: "_self" },
+  { title: "SAGE", path: "https://sage.ai-pathfinder.eu", target: "_blank" },
+  { title: "GUARD", path: "/guard", target: "_self" },
+  { title: "ARTISAN", path: "/artisan", target: "_self" },
+  { title: "About Us", path: "/about", target: "_self" },
 ];
-const pages = ["SAGE", "GUARD", "ARTISAN", "About"];
-
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -55,7 +49,7 @@ function ResponsiveAppBar() {
             variant="h5"
             component={Link}
             href="/"
-            className="hidden md:flex font-mono font-bold tracking-wider text-white no-underline hover:opacity-90 mr-4">
+            className="hidden md:flex font-mono font-bold tracking-wider text-white no-underline hover:opacity-90 mr-2">
             PATHFINDER
           </Typography>
 
@@ -87,43 +81,42 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: "block", md: "none" },
               }}>
-              {pages.map((page) => (
+              {navlinks.map(({ title, path, target }) => (
                 <MenuItem
-                  key={page}
+                  key={title}
                   onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <Link href={`${page.toLowerCase()}`}>{page}</Link>
+                    <Link
+                      href={path}
+                      className="text-gray-900 no-underline"
+                      target={target}>
+                      {title}
+                    </Link>
                   </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </div>
+          {/* Logo for Mobile */}
           <SignpostIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
-            component="a"
+            component={Link}
             href="/"
-            sx={{
-              mr: 4,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}>
+            className="flex-grow md:hidden font-mono font-bold tracking-wider text-white no-underline hover:opacity-90">
             PATHFINDER
           </Typography>
-          <nav className="hidden md:flex space-x-2">
-            {navlinks.map(([title, url]) => (
-              <a
+          {/* Desktop Navigation Menu */}
+          <nav className="hidden md:flex space-x-4">
+            {navlinks.map(({ title, path, target }) => (
+              <Link
                 key={title}
-                href={url}
-                className="rounded-lg px-2 py-1 text-slate-200 font-medium hover:bg-slate-200 hover:text-slate-800">
+                href={path}
+                className="rounded-lg px-3 py-1 text-gray-200 font-medium hover:bg-gray-200 hover:text-gray-900 transition-colors"
+                target={target}>
                 {title}
-              </a>
+              </Link>
             ))}
           </nav>
         </Toolbar>
