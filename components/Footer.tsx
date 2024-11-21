@@ -2,25 +2,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const companyLinks = [
-  {
-    title: "About",
-    href: "/about",
-  },
-  {
-    title: "Terms of Service",
-    href: "#",
-  },
-  {
-    title: "Privacy Policy",
-    href: "#",
-  },
-  {
-    title: "Cookie Policy",
-    href: "#",
-  },
-];
-
 function Logo() {
   return (
     <div className="text-lg font-extrabold">
