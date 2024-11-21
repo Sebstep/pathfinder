@@ -28,7 +28,7 @@ const logos = [
 
 export default function InstitutionLogos() {
   return (
-    <div className="mx-auto max-w-screen-xl py-8">
+    <div className="mx-auto max-w-screen-xl">
       <div className="flex flex-wrap justify-center items-center gap-6">
         {logos.map((logo, index) => (
           <Link
