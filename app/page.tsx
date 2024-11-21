@@ -5,6 +5,28 @@ import InstitutionLogos from "@/components/Institutionlogos";
 import Featurecard from "@/components/Featurecard";
 import Headings from "@/components/Doubleheadings";
 
+const features = [
+  {
+    title: "SAGE",
+    description: "Strategies for AI-Guided Education",
+    icon: <GiWizardStaff size={32} />,
+    link: "https://sage.ai-pathfinder.eu",
+  },
+  {
+    title: "GUARD",
+    description: "Generative Universal Assistant for Resourceful Development",
+    icon: <GiBorderedShield size={32} />,
+    link: "/guard",
+  },
+  {
+    title: "ARTISAN",
+    description:
+      "AI Readiness Training for Insightful Systematic Adaptation and Navigation",
+    icon: <GiBroadsword size={32} />,
+    link: "/artisan",
+  },
+];
+
 export default function Home() {
   return (
     <div className="">
@@ -82,25 +104,15 @@ export default function Home() {
             bottom="Meet the Pathfinders"
           />
           <div className="flex flex-wrap -m-4">
-            <Featurecard
-              title="SAGE"
-              description="Strategies for AI-Guided Education"
-              icon={<GiWizardStaff size={24} />}
-              link="/sage"
-            />
-            <Featurecard
-              title="GUARD"
-              description="Generative Universal Assistant for Resourceful Development"
-              icon={<GiBorderedShield size={24} />}
-              link="/guard"
-            />
-            <Featurecard
-              title="ARTISAN"
-              description="AI Readiness Training for Insightful Systematic Adaptation
-                    and Navigation"
-              icon={<GiBroadsword size={24} />}
-              link="/artisan"
-            />
+            {features.map((feature, index) => (
+              <Featurecard
+                key={index}
+                title={feature.title}
+                description={feature.description}
+                icon={feature.icon}
+                link={feature.link}
+              />
+            ))}
           </div>
         </div>
       </section>
