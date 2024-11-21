@@ -8,14 +8,16 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Pathfinder",
-  description: "An Erasmus+ project for higher education",
-};
+// export const metadata: Metadata = {
+//   title: "Pathfinder",
+//   description: "An Erasmus+ project for higher education",
+// };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scroll-smooth">
       <head>
         <link
           rel="icon"
@@ -24,6 +26,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+          name="description"
+          content="An Erasmus+ project for higher education"
+        />
+        <meta
+          property="og:title"
+          content="Pathfinder"
+        />
+        <meta
+          property="og:description"
+          content="An Erasmus+ project for higher education"
+        />
+        <meta
+          property="og:url"
+          content="https://ai-pathfinder.eu"
         />
         <GoogleAnalytics gaId="G-CCR887R8FM" />
       </head>
