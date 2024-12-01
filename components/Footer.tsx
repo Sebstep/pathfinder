@@ -5,7 +5,7 @@ import Image from "next/image";
 function Logo() {
   return (
     <div className="text-lg font-extrabold">
-      <span className="text-eu-blue">Erasmus+ Pathfinder</span>{" "}
+      <span className="text-eu-blue">Erasmus+ Pathfinder</span>
     </div>
   );
 }
