@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           property="og:url"
           content="https://ai-pathfinder.eu"
         />
-        {/* <GoogleAnalytics gaId="G-CCR887R8FM" /> */}
+        <GoogleAnalytics gaId="G-CCR887R8FM" />
       </head>
       <body className={inter.className}>
         <Navigation />
