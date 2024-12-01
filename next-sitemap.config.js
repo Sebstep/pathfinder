@@ -2,6 +2,6 @@
 module.exports = {
   siteUrl: process.env.SITE_URL || "https://ai-pathfinder.eu",
   generateRobotsTxt: true, // (optional)
-  outDir: "app",
+  generateIndexSitemap: false, // (optional)
   // ...other options
 };
