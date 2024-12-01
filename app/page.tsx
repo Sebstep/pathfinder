@@ -3,10 +3,11 @@ import Link from "next/link";
 import { GiWizardStaff, GiBorderedShield, GiBroadsword } from "react-icons/gi";
 import InstitutionLogos from "@/components/Institutionlogos";
 import Featurecard from "@/components/Featurecard";
-import Headings from "@/components/Doubleheadings";
+import DoubleHeadings from "@/components/DoubleHeadings";
 
 const projectDeliverables = [
   {
+    id: "sage",
     title: "SAGE",
     description: "Strategies for AI-Guided Education",
     icon: (
@@ -19,6 +20,7 @@ const projectDeliverables = [
     target: "_blank",
   },
   {
+    id: "guard",
     title: "GUARD",
     description: "Generative Universal Assistant for Resourceful Development",
     icon: (
@@ -30,6 +32,7 @@ const projectDeliverables = [
     link: "/guard",
   },
   {
+    id: "artisan",
     title: "ARTISAN",
     description:
       "AI Readiness Training for Insightful Systematic Adaptation and Navigation",
@@ -88,7 +91,7 @@ export default function Home() {
       {/* <!-- Objectives Section --> */}
       <section className="py-16 bg-blue-50">
         <div className="max-w-4xl mx-auto space-y-6 px-6">
-          <Headings
+          <DoubleHeadings
             top="PROJECT OBJECTIVE"
             bottom="Empowering Education Through AI"
           />
@@ -126,14 +129,14 @@ export default function Home() {
         className="py-16 bg-gradient-to-b from-white to-blue-50"
         id="deliverables">
         <div className="container px-5 mx-auto">
-          <Headings
+          <DoubleHeadings
             top="PROJECT DELIVERABLES"
             bottom="Meet the Pathfinders"
           />
           <div className="flex flex-wrap -m-4">
             {projectDeliverables.map((feature, index) => (
               <Featurecard
-                key={index}
+                key={feature.id}
                 title={feature.title}
                 description={feature.description}
                 icon={feature.icon}
@@ -148,7 +151,7 @@ export default function Home() {
       {/* <!-- Contact Section --> */}
       <section className="py-16 mx-auto ">
         <div className="max-w-5xl mx-auto text-center space-y-8">
-          <Headings
+          <DoubleHeadings
             top="PROJECT CONSORTIUM"
             bottom="Participating Organizations"
           />
