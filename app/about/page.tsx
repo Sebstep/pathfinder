@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Headings from "@/components/Doubleheadings";
+import DoubleHeadings from "@/components/DoubleHeadings";
 import Link from "next/link";
 import { FaGlobe, FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 
@@ -161,7 +161,7 @@ export default function About() {
     <section className="container py-16 mx-auto">
       {/* Top Part Wrapper */}
       <div className="flex flex-col mb-16 w-5/6 md:w-1/2 lg:max-w-2xl lg:w-full mx-auto">
-        <Headings
+        <DoubleHeadings
           top="PROJECT CONSORTIUM"
           bottom="Participating Organizations"
         />

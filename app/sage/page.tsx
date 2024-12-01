@@ -1,5 +1,5 @@
 import React from "react";
-import Headings from "@/components/Doubleheadings";
+import Headings from "@/components/DoubleHeadings";
 
 export default function Sage() {
   return (
