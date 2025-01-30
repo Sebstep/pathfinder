@@ -6,7 +6,7 @@ interface HeadingsProps {
 
 export default function Headings({ top, bottom, className = "" }: HeadingsProps) {
   return (
-    <div className="flex flex-col text-center w-full mb-8">
+    <div className="flex flex-col text-center mb-8 w-full">
       <h2 className="text-xl text-eu-blue tracking-widest font-semibold uppercase">
         {top}
       </h2>
