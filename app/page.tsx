@@ -118,7 +118,7 @@ export default function Home() {
             </li>
           </ul>
           <p className="text-lg text-gray-800">
-            Explore our website to learn more about our innovative approach to
+            Explore our website to learn more about this innovative approach to
             transforming higher education through AI.
           </p>
         </div>
