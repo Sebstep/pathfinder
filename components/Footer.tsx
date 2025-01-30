@@ -39,16 +39,7 @@ export default function MultiColumns() {
         <div className="flex flex-col space-y-4 md:w-5/12">
           <div className="text-sm font-semibold">Declarations</div>
           <p className="text-sm text-slate-600">
-            Project Number:{" "}
-            <Link
-              href="https://erasmus-plus.ec.europa.eu/projects/search/details/2023-2-LI01-KA220-HED-000178579"
-              className="text-blue-500 hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Erasmus+ Pathfinder Project link">
-              2023-2-LI01-KA220-HED-000178579
-            </Link>
-            . Funded by the European Union. Views and opinions expressed are however those
+            Funded by the European Union. Views and opinions expressed are however those
             of the author(s) only and do not necessarily reflect those of the European
             Union or the European Education and Culture Executive Agency (EACEA). Neither
             the European Union nor EACEA can be held responsible for them.
