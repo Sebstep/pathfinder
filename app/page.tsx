@@ -68,15 +68,16 @@ const Hero = () => (
       </div>
 
       {/* Right Side */}
-      <div className="relative w-full md:w-1/2 max-w-lg">
-        <Image
-          src="/images/hero-image.jpeg"
-          alt="Hero Image"
-          width={600}
-          height={400}
-          className="rounded-3xl shadow-lg object-cover"
-          priority
-        />
+      <div className="relative w-full md:w-1/2 md:ml-auto max-w-[300px] md:max-w-[400px]">
+        <div className="relative aspect-square w-full">
+          <Image
+            src="/images/pathfinder.png"
+            alt="Hero Image"
+            fill
+            className="rounded-3xl object-cover"
+            priority
+          />
+        </div>
       </div>
     </div>
   </section>
