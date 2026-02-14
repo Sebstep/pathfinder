@@ -7,6 +7,9 @@ type FeaturecardProps = {
   icon: React.ReactNode;
   link: string;
   target?: string;
+  status: "Live" | "Coming soon";
+  audience: string;
+  ctaLabel: string;
 };
 
 export default function Featurecard({
@@ -14,7 +17,10 @@ export default function Featurecard({
   description,
   icon,
   link,
-  target="_self",
+  target = "_self",
+  status,
+  audience,
+  ctaLabel,
 }: FeaturecardProps) {
   return (
     <Link
@@ -32,8 +38,21 @@ export default function Featurecard({
         </div>
         <div className="flex-grow">
           <p className="text-base leading-relaxed text-gray-700">{description}</p>
-          <p className="mt-3 text-blue-600 inline-flex items-center font-medium group-hover:underline">
-            Learn More &rarr;
+          <div className="mt-4 flex flex-wrap gap-2">
+            <span
+              className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                status === "Live"
+                  ? "bg-emerald-100 text-emerald-800"
+                  : "bg-amber-100 text-amber-800"
+              }`}>
+              Status: {status}
+            </span>
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
+              For: {audience}
+            </span>
+          </div>
+          <p className="mt-4 text-blue-600 inline-flex items-center font-medium group-hover:underline">
+            {ctaLabel} &rarr;
           </p>
         </div>
       </div>

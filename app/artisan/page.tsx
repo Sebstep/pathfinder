@@ -10,6 +10,17 @@ export default function Artisan() {
           bottom="AI Readiness Training for Insightful Systematic Adaptation and
           Navigation"
         />
+        <div className="mb-8 flex flex-wrap gap-2">
+          <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-800">
+            Status: Coming soon
+          </span>
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700">
+            For: Educators and Students
+          </span>
+        </div>
+        <p className="mb-8 leading-relaxed">
+          ARTISAN is currently in development. Its domain will be announced.
+        </p>
         <p className="mb-8 leading-relaxed">
           ARTISAN is a comprehensive competency-based learning program designed to deepen
           students&apos; knowledge and understanding of effectively and responsibly using

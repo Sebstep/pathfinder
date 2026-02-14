@@ -18,6 +18,9 @@ const projectDeliverables = [
     ),
     link: "https://sage.ai-pathfinder.eu",
     target: "_blank",
+    status: "Live" as const,
+    audience: "Educators",
+    ctaLabel: "Visit SAGE",
   },
   {
     id: "guard",
@@ -30,6 +33,9 @@ const projectDeliverables = [
       />
     ),
     link: "/guard",
+    status: "Coming soon" as const,
+    audience: "Educators",
+    ctaLabel: "Learn about GUARD",
   },
   {
     id: "artisan",
@@ -43,6 +49,9 @@ const projectDeliverables = [
       />
     ),
     link: "/artisan",
+    status: "Coming soon" as const,
+    audience: "Educators and Students",
+    ctaLabel: "Learn about ARTISAN",
   },
 ];
 
@@ -134,8 +143,19 @@ export default function Home() {
             top="PROJECT DELIVERABLES"
             bottom="Meet the Pathfinders"
           />
+          <p className="mx-auto mb-8 max-w-4xl text-center text-gray-700">
+            SAGE is live at{" "}
+            <Link
+              href="https://sage.ai-pathfinder.eu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-eu-blue hover:underline">
+              sage.ai-pathfinder.eu
+            </Link>
+            . Domains for GUARD and ARTISAN will be announced.
+          </p>
           <div className="flex flex-wrap -m-4">
-            {projectDeliverables.map((feature, index) => (
+            {projectDeliverables.map((feature) => (
               <Featurecard
                 key={feature.id}
                 title={feature.title}
@@ -143,6 +163,9 @@ export default function Home() {
                 icon={feature.icon}
                 link={feature.link}
                 target={feature.target}
+                status={feature.status}
+                audience={feature.audience}
+                ctaLabel={feature.ctaLabel}
               />
             ))}
           </div>

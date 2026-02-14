@@ -10,6 +10,17 @@ export default function Guard() {
             top="GUARD"
             bottom="Generative Universal Assistant for Resourceful Development"
           />
+          <div className="mb-8 flex flex-wrap gap-2">
+            <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-800">
+              Status: Coming soon
+            </span>
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700">
+              For: Educators
+            </span>
+          </div>
+          <p className="mb-8">
+            GUARD is currently in development. Its domain will be announced.
+          </p>
           <p className="mb-8">
             GUARD will be an innovative AI-powered toolkit designed to assist educators in
             implementing AI technology in lesson planning and teaching. This practical

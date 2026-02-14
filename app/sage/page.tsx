@@ -1,5 +1,6 @@
 import React from "react";
 import Headings from "@/components/DoubleHeadings";
+import Link from "next/link";
 
 export default function Sage() {
   return (
@@ -9,6 +10,25 @@ export default function Sage() {
           top="SAGE"
           bottom="Strategies for AI-Guided Education"
         />
+        <div className="mb-8 flex flex-wrap gap-2">
+          <span className="rounded-full bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-800">
+            Status: Live
+          </span>
+          <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-semibold text-slate-700">
+            For: Educators
+          </span>
+        </div>
+        <p className="mb-8">
+          Explore the live output at{" "}
+          <Link
+            href="https://sage.ai-pathfinder.eu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-eu-blue hover:underline">
+            sage.ai-pathfinder.eu
+          </Link>
+          .
+        </p>
         <p className="mb-8">
           SAGE is a comprehensive and scalable instructional framework designed to guide
           educators in the effective and responsible integration of AI tools into higher
