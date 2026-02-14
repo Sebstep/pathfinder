@@ -19,39 +19,57 @@ export default function Artisan() {
           </span>
         </div>
         <p className="mb-8 leading-relaxed">
-          ARTISAN is currently in development. Its domain will be announced.
+          ARTISAN is currently in development. Its domain will be announced. Launch
+          updates will be published on this Pathfinder website.
         </p>
         <p className="mb-8 leading-relaxed">
-          ARTISAN is a comprehensive competency-based learning program designed to deepen
-          students&apos; knowledge and understanding of effectively and responsibly using
-          AI technology. This program empowers students with AI literacy, fosters a growth
-          mindset, and cultivates essential skills for continuous learning and
-          adaptability.
+          ARTISAN is a coming-soon AI readiness program for educators and students. It
+          combines core AI literacy, applied practice, and responsible-use principles for
+          higher education settings.
         </p>
         <p className="mb-4">
-          <b>Key Features of ARTISAN:</b>
+          <b>Who ARTISAN is for:</b>
         </p>
         <ul className="mb-8">
           <li>
-            Foundational courses on AI principles, applications, and ethical
-            considerations
+            Educators: to integrate AI literacy into courses and guide students through
+            applied, ethical AI use
           </li>
           <li>
-            Hands-on projects and case studies to apply AI concepts in real-world
-            scenarios
-          </li>
-          <li>
-            Entrepreneurship modules to nurture innovation and develop business acumen
-          </li>
-          <li>
-            Career readiness workshops and mentorship opportunities for professional
-            development
+            Students: to build confidence in AI concepts, evaluate outputs critically,
+            and apply AI in real project work
           </li>
         </ul>
+        <p className="mb-4">
+          <b>Planned program components:</b>
+        </p>
+        <ul className="mb-8">
+          <li>
+            Foundational modules on AI concepts, capabilities, limitations, and ethics
+          </li>
+          <li>
+            Hands-on assignments and case-based exercises for applied learning
+          </li>
+          <li>
+            Entrepreneurship-oriented activities focused on opportunity discovery and
+            solution design
+          </li>
+          <li>
+            Career readiness elements to support transferable digital and professional
+            skills
+          </li>
+        </ul>
+        <p className="mb-4">
+          <b>At launch, participants will be able to:</b>
+        </p>
+        <ul className="mb-8">
+          <li>Follow a structured AI literacy learning path</li>
+          <li>Complete practical tasks using AI responsibly in context</li>
+          <li>Develop portfolios of applied work for academic and career growth</li>
+        </ul>
         <p className="mb-8">
-          By participating in ARTISAN, students gain a competitive edge in the job market,
-          develop an entrepreneurial mindset, and become agents of change in the digital
-          era, prepared to tackle complex challenges and drive innovation.
+          ARTISAN is being designed to support long-term AI readiness through practical
+          learning, critical thinking, and continuous adaptation.
         </p>
       </div>
     </section>
