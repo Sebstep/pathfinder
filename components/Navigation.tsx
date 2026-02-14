@@ -1,14 +1,16 @@
 "use client";
 
 import * as React from "react";
+import { usePathname } from "next/navigation";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import Container from "@mui/material/Container";
-import MenuItem from "@mui/material/MenuItem";
+import Drawer from "@mui/material/Drawer";
+import Box from "@mui/material/Box";
 import Link from "next/link";
 import SignpostIcon from "@mui/icons-material/Signpost";
 
@@ -21,108 +23,123 @@ const navlinks = [
 ];
 
 function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
+  const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
+  const handleOpenNavMenu = () => {
+    setMobileOpen(true);
   };
 
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    setMobileOpen(false);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
+  const isActivePath = (path: string, target: string) => {
+    if (target !== "_self") {
+      return false;
+    }
+    if (path === "/") {
+      return pathname === "/";
+    }
+    return pathname.startsWith(path);
   };
 
   return (
-    <AppBar className="fixed bg-eu-blue shadow-md">
+    <AppBar
+      className="fixed top-0 border-b border-white/15 bg-eu-blue/90 shadow-lg backdrop-blur-md"
+      elevation={0}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          {/* Logo for Desktop */}
-          <SignpostIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+        <Toolbar
+          disableGutters
+          className="min-h-[72px]">
+          <SignpostIcon sx={{ display: "flex", mr: 1, color: "#ffd617" }} />
           <Typography
             variant="h5"
             component={Link}
             href="/"
-            className="hidden md:flex font-mono font-bold tracking-wider text-white no-underline hover:opacity-90 mr-4">
+            className="font-mono text-xl font-bold tracking-wider text-white no-underline transition-opacity hover:opacity-90">
             PATHFINDER
           </Typography>
 
-          {/* Mobile Navigation Menu */}
-          <div className="flex flex-grow md:hidden">
+          <Box className="hidden flex-1 items-center justify-end gap-2 md:flex">
+            {navlinks.map(({ title, path, target }) => {
+              const isActive = isActivePath(path, target);
+              return (
+                <Link
+                  key={title}
+                  href={path}
+                  aria-current={isActive ? "page" : undefined}
+                  className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+                    isActive
+                      ? "bg-white text-eu-blue shadow-sm"
+                      : "text-gray-100 hover:bg-white/15 hover:text-white"
+                  }`}
+                  target={target}
+                  rel={target === "_blank" ? "noopener noreferrer" : undefined}>
+                  {title}
+                </Link>
+              );
+            })}
+          </Box>
+
+          <Box className="ml-auto flex md:hidden">
             <IconButton
               size="large"
-              aria-label="Open navigation menu"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
+              aria-label="Open navigation drawer"
               onClick={handleOpenNavMenu}
-              color="inherit">
+              color="inherit"
+              className="rounded-xl border border-white/20 bg-white/10">
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
+            <Drawer
+              anchor="right"
+              open={mobileOpen}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
-              }}>
-              {navlinks.map(({ title, path, target }) => (
-                <MenuItem
-                  key={title}
-                  onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
+                "& .MuiDrawer-paper": {
+                  width: "84vw",
+                  maxWidth: "340px",
+                  backgroundColor: "#0a3f86",
+                  color: "#ffffff",
+                },
+              }}
+              className="md:hidden">
+              <Box className="flex items-center justify-between border-b border-white/20 px-4 py-4">
+                <Box className="flex items-center gap-2">
+                  <SignpostIcon sx={{ color: "#ffd617" }} />
+                  <Typography className="font-mono text-lg font-bold tracking-wider">PATHFINDER</Typography>
+                </Box>
+                <IconButton
+                  aria-label="Close navigation drawer"
+                  onClick={handleCloseNavMenu}
+                  className="text-white">
+                  <CloseIcon />
+                </IconButton>
+              </Box>
+
+              <Box
+                component="nav"
+                className="flex flex-col gap-2 p-4">
+                {navlinks.map(({ title, path, target }) => {
+                  const isActive = isActivePath(path, target);
+                  return (
                     <Link
+                      key={title}
                       href={path}
-                      className="text-gray-900 no-underline"
+                      onClick={handleCloseNavMenu}
+                      aria-current={isActive ? "page" : undefined}
+                      className={`rounded-xl px-4 py-3 text-base font-semibold no-underline transition-colors ${
+                        isActive ? "bg-white text-eu-blue" : "text-white hover:bg-white/15"
+                      }`}
                       target={target}
                       rel={target === "_blank" ? "noopener noreferrer" : undefined}>
                       {title}
                     </Link>
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </div>
-
-          {/* Logo for Mobile */}
-          <SignpostIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component={Link}
-            href="/"
-            className="flex-grow md:hidden font-mono font-bold tracking-wider text-white no-underline hover:opacity-90">
-            PATHFINDER
-          </Typography>
-
-          {/* Desktop Navigation Menu */}
-          <nav className="hidden md:flex space-x-4">
-            {navlinks.map(({ title, path, target }) => (
-              <Link
-                key={title}
-                href={path}
-                className="rounded-lg px-1 py-1 text-gray-200 font-medium hover:bg-gray-200 hover:text-gray-900 transition-colors"
-                target={target}
-                rel={target === "_blank" ? "noopener noreferrer" : undefined}>
-                {title}
-              </Link>
-            ))}
-          </nav>
+                  );
+                })}
+              </Box>
+            </Drawer>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>
