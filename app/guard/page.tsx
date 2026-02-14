@@ -19,37 +19,42 @@ export default function Guard() {
             </span>
           </div>
           <p className="mb-8">
-            GUARD is currently in development. Its domain will be announced.
+            GUARD is currently in development. Its domain will be announced. Launch
+            updates will be published on this Pathfinder website.
           </p>
           <p className="mb-8">
-            GUARD will be an innovative AI-powered toolkit designed to assist educators in
-            implementing AI technology in lesson planning and teaching. This practical
-            solution empowers teachers to apply the SAGE framework in their coursework,
-            facilitating personalized learning experiences and igniting learners&apos;
-            creativity.
+            GUARD is a coming-soon AI assistant for educators. It is designed to help
+            translate the SAGE framework into practical lesson design, teaching support,
+            and classroom adaptation workflows.
           </p>
           <p className="mb-4">
-            <b>Key Features of GUARD:</b>
+            <b>Planned capabilities:</b>
           </p>
           <ul className="mb-8">
             <li>
-              AI-driven lesson planning tools for creating engaging and interactive
-              learning materials
-            </li>
-            <li>Intelligent feedback systems to streamline assessment processes </li>
-            <li>
-              Adaptive learning platforms that tailor content to individual student needs
-              and preferences
+              Guided lesson planning flows aligned with course goals and learning outcomes
             </li>
             <li>
-              Data analytics and visualization tools for tracking student progress and
-              identifying areas for improvement
+              AI-assisted generation of learning activities, prompts, and classroom
+              resources
             </li>
+            <li>
+              Support for adapting material to different learner needs and teaching
+              contexts
+            </li>
+            <li>Progress insights to help educators identify areas for intervention</li>
+          </ul>
+          <p className="mb-4">
+            <b>At launch, educators will be able to:</b>
+          </p>
+          <ul className="mb-8">
+            <li>Plan AI-supported lessons faster with structured guidance</li>
+            <li>Generate ready-to-use classroom activities from learning objectives</li>
+            <li>Review learner progress signals to refine teaching decisions</li>
           </ul>
           <p className="mb-8">
-            By leveraging the power of GUARD, educators can enhance their teaching
-            practices, optimize student learning outcomes, and stay ahead of the curve in
-            the rapidly evolving digital education landscape.
+            GUARD is being built as a practical companion for day-to-day teaching, with a
+            focus on usability, relevance, and responsible AI use in higher education.
           </p>
         </div>
       </section>
