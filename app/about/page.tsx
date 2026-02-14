@@ -51,7 +51,7 @@ const partners: Partner[] = [
     country: "Finland 🇫🇮",
     description:
       "LAB University of Applied Sciences in Finland stands out for its applied research and education in health and wellbeing, circular economy, and design, preparing students for impactful careers with a global perspective.",
-    imgSrc: "/images/partners/lab.png",
+    imgSrc: "/images/partners/LAB.png",
     socialLinks: [
       { name: "Website", url: "https://lab.fi/en/", icon: <FaGlobe size={24} /> },
       {
@@ -138,6 +138,8 @@ function SocialIcons({ links }: { links: SocialLink[] }) {
           href={link.url}
           target="_blank"
           rel="noopener noreferrer"
+          aria-label={link.name}
+          title={link.name}
           className="text-gray-500 hover:text-eu-blue transition-colors">
           {link.icon}
         </Link>
@@ -148,8 +150,8 @@ function SocialIcons({ links }: { links: SocialLink[] }) {
 
 function PartnerWrapper({ children }: { children: React.ReactNode }) {
   return (
-    <div className="p-8 xl:w-1/2">
-      <div className="px-8 h-full flex flex-col sm:flex-row items-start justify-center text-left">
+    <div className="p-4 sm:p-6 xl:w-1/2">
+      <div className="h-full flex flex-col sm:flex-row items-start justify-center text-left gap-4 sm:gap-0 sm:px-4">
         {children}
       </div>
     </div>
@@ -192,7 +194,7 @@ export default function About() {
               height={200}
               src={partner.imgSrc}
             />
-            <div className="flex-grow pl-4">
+            <div className="flex-grow pl-0 sm:pl-4">
               <h2 className="title-font font-medium text-lg text-gray-900">
                 {partner.name}
               </h2>

@@ -127,7 +127,7 @@ export default function Home() {
 
       {/* Deliverables Section */}
       <section
-        className="py-16 bg-gradient-to-b from-white to-blue-50"
+        className="scroll-mt-24 py-16 bg-gradient-to-b from-white to-blue-50"
         id="deliverables">
         <div className="container px-5 mx-auto">
           <DoubleHeadings

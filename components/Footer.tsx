@@ -47,7 +47,7 @@ export default function MultiColumns() {
           <div className="mt-4">
             <Image
               src="/images/funded-by-eu-wide.png"
-              alt=""
+              alt="Funded by the European Union"
               width={200}
               height={50}
               className="mx-auto md:mx-0"

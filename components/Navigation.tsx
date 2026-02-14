@@ -89,7 +89,8 @@ function ResponsiveAppBar() {
                     <Link
                       href={path}
                       className="text-gray-900 no-underline"
-                      target={target}>
+                      target={target}
+                      rel={target === "_blank" ? "noopener noreferrer" : undefined}>
                       {title}
                     </Link>
                   </Typography>
