@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v16-appRouter";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,9 +47,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <GoogleAnalytics gaId="G-CCR887R8FM" />
       </head>
       <body className={inter.className}>
-        <Navigation />
-        <main className="mx-auto py-14 sm:py-16">{children}</main>
-        <Footer />
+        <AppRouterCacheProvider>
+          <Navigation />
+          <main className="mx-auto py-14 sm:py-16">{children}</main>
+          <Footer />
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
