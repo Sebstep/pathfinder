@@ -26,11 +26,11 @@
 - If adding tests, colocate them near source files with `*.test.ts(x)` or `*.spec.ts(x)` naming.
 
 ## Commit & Pull Request Guidelines
-- Match current history style: short, imperative commit subjects (for example, `fixed nav`, `bumped node to 24`).
+- Match current history style: short, imperative commit subjects (for example, `fixed nav`, `updated deps`).
 - Keep commits focused to one logical change; separate dependency bumps from feature edits when possible.
 - PRs should include a concise summary, validation steps, linked issue/ticket, and screenshots for visual updates.
 - Call out SEO/output changes explicitly when `sitemap` or `robots` files are updated.
 
 ## Environment & Configuration Tips
-- Use Node `24.x` (`.nvmrc` and `package.json` engines).
+- Use a Node.js version compatible with Next.js 16 (Node `>=20.9.0`).
 - Keep generated SEO artifacts in sync when routes are added, renamed, or removed.
