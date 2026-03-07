@@ -17,7 +17,7 @@ import SignpostIcon from "@mui/icons-material/Signpost";
 const navlinks = [
   { title: "Home", path: "/", target: "_self" },
   { title: "SAGE", path: "https://sage.ai-pathfinder.eu", target: "_blank" },
-  { title: "GUARD", path: "/guard", target: "_self" },
+  { title: "GUARD", path: "https://guard.ai-pathfinder.eu", target: "_blank" },
   { title: "ARTISAN", path: "/artisan", target: "_self" },
   { title: "About Us", path: "/about", target: "_self" },
 ];

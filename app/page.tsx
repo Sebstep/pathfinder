@@ -32,10 +32,11 @@ const projectDeliverables = [
         aria-hidden="true"
       />
     ),
-    link: "/guard",
-    status: "Coming soon" as const,
+    link: "https://guard.ai-pathfinder.eu",
+    target: "_blank",
+    status: "Beta testing" as const,
     audience: "Educators",
-    ctaLabel: "Learn about GUARD",
+    ctaLabel: "Try GUARD",
   },
   {
     id: "artisan",
@@ -152,7 +153,15 @@ export default function Home() {
               className="font-semibold text-eu-blue hover:underline">
               sage.ai-pathfinder.eu
             </Link>
-            . Domains for GUARD and ARTISAN will be announced.
+            . GUARD is open for beta testing at{" "}
+            <Link
+              href="https://guard.ai-pathfinder.eu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-eu-blue hover:underline">
+              guard.ai-pathfinder.eu
+            </Link>
+            . The domain for ARTISAN will be announced.
           </p>
           <div className="flex flex-wrap -m-4">
             {projectDeliverables.map((feature) => (

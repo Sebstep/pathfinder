@@ -7,7 +7,7 @@ type FeaturecardProps = {
   icon: React.ReactNode;
   link: string;
   target?: string;
-  status: "Live" | "Coming soon";
+  status: "Live" | "Coming soon" | "Beta testing";
   audience: string;
   ctaLabel: string;
 };
@@ -43,7 +43,9 @@ export default function Featurecard({
               className={`rounded-full px-3 py-1 text-xs font-semibold ${
                 status === "Live"
                   ? "bg-emerald-100 text-emerald-800"
-                  : "bg-amber-100 text-amber-800"
+                  : status === "Beta testing"
+                    ? "bg-amber-100 text-amber-800"
+                    : "bg-red-100 text-red-800"
               }`}>
               Status: {status}
             </span>
